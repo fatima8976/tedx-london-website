@@ -20,6 +20,7 @@
       <div class="nav-dropdown-menu">
         <a href="../overview/" class="nav-dropdown-item"><div class="dropdown-item-title">Overview</div><div class="dropdown-item-desc">Learn about our background, reach, and impact.</div></a>
         <a href="../members/" class="nav-dropdown-item"><div class="dropdown-item-title">Members</div><div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div></a>
+        <a href="../teams/" class="nav-dropdown-item"><div class="dropdown-item-title">Teams</div><div class="dropdown-item-desc">How we&rsquo;re organised behind the scenes.</div></a>
         
       </div>
     </div>
@@ -44,11 +45,11 @@
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; max-width:1200px;">
     <div>
       <div class="section-label">Events</div>
-      <div class="section-title">Speaker Workshop Series</div>
-      <p>Before the stage, there's the workshop. A 6 week series of sessions helping student speakers craft their stories, develop their ideas, and find their voice.</p>
+      <div class="section-title" id="wsHeroTitle">Speaker Workshop Series</div>
+      <p id="wsHeroIntro"></p>
     </div>
     <div style="border-radius:16px; overflow:hidden;">
-      <img src="../workshop%20series/Week%201/IMG_3862.JPG" alt="Workshop Series — students in discussion" style="width:100%; height:400px; object-fit:cover; object-position:center 30%; display:block; border-radius:16px;">
+      <img id="wsHeroImage" src="../workshop-series-photos/week-1/IMG_3862.JPG" alt="Workshop Series — students in discussion" style="width:100%; height:400px; object-fit:cover; object-position:center 30%; display:block; border-radius:16px;">
     </div>
   </div>
 </div>
@@ -56,30 +57,23 @@
 <!-- Intro -->
 <section style="padding: 5rem 3rem; background: var(--bg-primary); border-top: 1px solid var(--border);">
   <div class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; max-width:1100px; margin:0 auto 5rem;">
-    <p style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;">Our workshop series ran in the lead-up to the flagship event, giving student speakers the tools and confidence to take the TEDx stage. Each session focused on a different dimension of the talk-building process.</p>
-    <p style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;">From finding your idea to crafting your narrative and delivering with impact — the workshops were a space for experimentation, feedback, and growth.</p>
+    <p id="wsIntroParagraph1" style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;"></p>
+    <p id="wsIntroParagraph2" style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;"></p>
   </div>
 
   <!-- Pull quote -->
   <div class="reveal" style="max-width:900px; margin:0 auto 5rem; text-align:center; padding:3rem 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border); position:relative;">
     <span style="font-family:var(--font-display); font-size:8rem; color:var(--red); line-height:0; position:absolute; top:2.5rem; left:0; opacity:0.18;">&ldquo;</span>
     <span style="font-family:var(--font-display); font-size:8rem; color:var(--red); line-height:0; position:absolute; bottom:-2rem; right:0; opacity:0.18;">&rdquo;</span>
-    <p style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,2.8rem); font-style:italic; color:var(--text-primary); line-height:1.35; margin:0; position:relative; z-index:1;">Every great talk starts long before the spotlight.</p>
+    <p id="wsPullQuote" style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,2.8rem); font-style:italic; color:var(--text-primary); line-height:1.35; margin:0; position:relative; z-index:1;"></p>
   </div>
 </section>
 
 <!-- Photo grid -->
 <section style="padding: 4rem 3rem 5rem; background: var(--bg-secondary); border-top: 1px solid var(--border);">
   <div class="reveal" style="max-width:1100px; margin:0 auto;">
-    <div class="section-label" style="margin-bottom:1.75rem;">From the sessions</div>
-    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.25rem;">
-      <img src="../workshop%20series/Week%202/IMG_3976.JPG" alt="" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; display:block;">
-      <img src="../workshop%20series/Week%201/IMG_3836.JPG" alt="" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; display:block;">
-      <img src="../workshop%20series/Week%201/IMG_3851.JPG" alt="" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; display:block;">
-      <img src="../workshop%20series/Week%201/IMG_3866.JPG" alt="" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; display:block;">
-      <img src="../workshop%20series/Week%202/IMG_3987.JPG" alt="" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; display:block;">
-      <img src="../workshop%20series/Speaker%202/IMG_4243.JPG" alt="" style="width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; display:block;">
-    </div>
+    <div class="section-label" id="wsGalleryLabel" style="margin-bottom:1.75rem;">From the sessions</div>
+    <div id="wsGallery" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.25rem;"></div>
   </div>
 </section>
 
@@ -95,5 +89,7 @@
   <div class="footer-bottom"><p>&copy; 2026 TEDxNortheasternU London &middot; All Rights Reserved</p><div class="footer-nav-links"><a href="../overview/">About</a><a href="../join.html">Join</a><a href="../events.html">Flagship Event</a><a href="../workshop-series/">Workshop Series</a><a href="../sponsors.html">Sponsor</a><a href="../news.html">News</a><a href="../contact.html">Contact</a></div></div>
 </footer>
 <script src="../js/main.js"></script>
+<script src="../js/settings.js"></script>
+<script src="../js/workshop-series.js"></script>
 </body>
 </html>

@@ -38,6 +38,7 @@ function toggleDropdown(event) {
 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.nav-links a').forEach(function(a) {
+    if (a.classList.contains('nav-dropdown-toggle')) return;
     a.addEventListener('click', function() {
       var navLinks = document.getElementById('navLinks');
       if (navLinks) navLinks.classList.remove('open');
@@ -51,57 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // ── PHOTO CAROUSEL ──
-  var carouselImages = [
-    'gallery/fatima-lorena.JPG',
-    'gallery/jack.jpg',
-    'gallery/wilder.JPG',
-    'gallery/grace.jpg',
-    'gallery/sarah.JPG',
-    'gallery/audience.JPG',
-    'gallery/james.JPG',
-    'gallery/julia.jpg',
-    'gallery/sulayman.JPG',
-    'gallery/asif.jpg',
-    'gallery/exco-and-speakers.jpg'
-  ];
-  var carouselIndex = 0;
-  var carouselTouchX = 0;
-  var carouselEl = document.querySelector('.photo-carousel');
-
-  function carouselNav(dir) {
-    var img = document.getElementById('carouselImg');
-    var bg = document.getElementById('carouselBg');
-    if (!img) return;
-    img.style.opacity = '0';
-    if (bg) bg.style.opacity = '0';
-    setTimeout(function() {
-      carouselIndex = (carouselIndex + dir + carouselImages.length) % carouselImages.length;
-      img.src = carouselImages[carouselIndex];
-      if (bg) bg.src = carouselImages[carouselIndex];
-      document.getElementById('carouselCounter').textContent = (carouselIndex + 1) + ' / ' + carouselImages.length;
-      img.style.opacity = '1';
-      if (bg) bg.style.opacity = '0.75';
-    }, 200);
-  }
-
-  if (carouselEl) {
-    document.getElementById('carouselPrev').addEventListener('click', function() { carouselNav(-1); });
-    document.getElementById('carouselNext').addEventListener('click', function() { carouselNav(1); });
-
-    carouselEl.addEventListener('touchstart', function(e) {
-      carouselTouchX = e.touches[0].clientX;
-    }, { passive: true });
-    carouselEl.addEventListener('touchend', function(e) {
-      var dx = e.changedTouches[0].clientX - carouselTouchX;
-      if (Math.abs(dx) > 50) carouselNav(dx < 0 ? 1 : -1);
-    }, { passive: true });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'ArrowLeft') carouselNav(-1);
-      else if (e.key === 'ArrowRight') carouselNav(1);
-    });
-  }
+  // Photo carousel (events.html) now lives in js/events.js, driven by
+  // content/events.json's gallery field instead of a hardcoded array here.
 
   // ── SCROLL REVEALS ──
   var observer = new IntersectionObserver(function(entries) {
@@ -113,4 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.reveal').forEach(function(el) {
     observer.observe(el);
   });
+
+  // Lets scripts that inject content after DOMContentLoaded (CMS-driven
+  // fetch/render, e.g. js/join.js, js/news.js) register their new .reveal
+  // elements for the same scroll animation.
+  window.tedxObserveReveal = function(el) {
+    observer.observe(el);
+  };
 });

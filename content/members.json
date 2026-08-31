@@ -1,0 +1,15 @@
+{
+  "members": [
+    { "name": "", "photo": "", "role": "President", "group": "ExCo", "order": 1 },
+    { "name": "", "photo": "", "role": "Senior Vice President", "group": "ExCo", "order": 2 },
+    { "name": "", "photo": "", "role": "Junior Vice President", "group": "ExCo", "order": 3 },
+    { "name": "", "photo": "", "role": "Secretary", "group": "ExCo", "order": 4 },
+    { "name": "", "photo": "", "role": "Treasurer", "group": "ExCo", "order": 5 },
+    { "name": "", "photo": "", "role": "Media Officer", "group": "Officers", "order": 1 },
+    { "name": "", "photo": "", "role": "Marketing Officer", "group": "Officers", "order": 2 },
+    { "name": "", "photo": "", "role": "Operations & Events Officer", "group": "Officers", "order": 3 },
+    { "name": "", "photo": "", "role": "Technology Officer", "group": "Officers", "order": 4 },
+    { "name": "", "photo": "", "role": "Outreach Officer", "group": "Officers", "order": 5 },
+    { "name": "", "photo": "", "role": "Sponsorship Officer", "group": "Officers", "order": 6 }
+  ]
+}

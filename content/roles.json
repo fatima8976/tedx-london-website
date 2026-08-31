@@ -1,0 +1,285 @@
+{
+  "roles": [
+    {
+      "slug": "junior-vice-president",
+      "title": "Junior Vice President",
+      "category": "Executive Committee",
+      "timeCommitment": "4–6 hrs/week",
+      "location": "London, UK",
+      "description": "The Junior Vice President supports the Senior Vice President and President in the day-to-day running of TEDxNortheasternU London. You will help coordinate across teams, act as a key point of contact between officers and executive leadership, and step in where needed to keep operations running smoothly.",
+      "responsibilities": [
+        "Support the Senior Vice President in overseeing officer teams",
+        "Act as a liaison between the Executive Committee and Officers",
+        "Assist in planning and running team meetings and check-ins",
+        "Step in to cover responsibilities across teams when needed",
+        "Help onboard new members and contribute to team culture",
+        "Support logistics planning for events and workshops"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Strong organisational and communication skills",
+        "Ability to manage multiple priorities simultaneously",
+        "Proactive, dependable, and a collaborative team player",
+        "Prior experience in a leadership or coordination role is a plus"
+      ],
+      "applyUrl": "",
+      "order": 1,
+      "status": "open"
+    },
+    {
+      "slug": "secretary",
+      "title": "Secretary",
+      "category": "Executive Committee",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Secretary keeps TEDxNortheasternU London organised and running efficiently. You will manage internal communications, maintain records, schedule meetings, and ensure the team stays aligned and informed across all stages of the event cycle.",
+      "responsibilities": [
+        "Record and distribute minutes from all team meetings",
+        "Manage the team calendar and coordinate scheduling",
+        "Maintain organised records of key documents and decisions",
+        "Draft and circulate internal communications and updates",
+        "Support the Executive Committee with administrative tasks",
+        "Liaise with external contacts where required"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Highly organised with strong attention to detail",
+        "Excellent written communication skills",
+        "Proficiency with Google Workspace or Microsoft 365",
+        "Reliable, punctual, and able to manage confidential information"
+      ],
+      "applyUrl": "",
+      "order": 2,
+      "status": "open"
+    },
+    {
+      "slug": "marketing-officer",
+      "title": "Marketing Officer",
+      "category": "Officer",
+      "timeCommitment": "4–6 hrs/week",
+      "location": "London, UK",
+      "description": "The Marketing Officer drives awareness and engagement for TEDxNortheasternU London. You will plan and execute marketing campaigns, grow our audience on and off campus, and ensure the right people hear about our events and initiatives.",
+      "responsibilities": [
+        "Develop and execute marketing campaigns for events and initiatives",
+        "Manage promotional materials in coordination with the Design team",
+        "Grow audience reach across digital and physical channels",
+        "Track marketing performance and report on key metrics",
+        "Represent TEDxNortheasternU London at campus events and fairs"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Passion for marketing, communications, or a related field",
+        "Strong written and verbal communication skills",
+        "Experience with marketing platforms, tools, or campaigns is a plus",
+        "Creative, data-aware, and audience-focused mindset"
+      ],
+      "applyUrl": "",
+      "order": 3,
+      "status": "open"
+    },
+    {
+      "slug": "media-officer-photography",
+      "title": "Media Officer",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Media Officer (Photography) is responsible for capturing the visual story of TEDxNortheasternU London. From workshop sessions to the flagship event, you will document our journey through photography, producing a library of high-quality images that represent the spirit of our community.",
+      "responsibilities": [
+        "Photograph workshop sessions, team events, and the flagship event",
+        "Deliver edited, high-resolution images for use across all channels",
+        "Work with the Design & Media team to meet visual content needs",
+        "Maintain an organised archive of all photography assets",
+        "Contribute to pre-event and post-event visual storytelling"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Experience in event or portrait photography",
+        "Proficiency in photo editing software (Lightroom, Photoshop, or equivalent)",
+        "Own camera equipment preferred",
+        "Strong eye for composition and detail"
+      ],
+      "applyUrl": "",
+      "order": 4,
+      "status": "open"
+    },
+    {
+      "slug": "media-officer-videography",
+      "title": "Media Officer · Videography",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Media Officer (Videography) captures and produces video content for TEDxNortheasternU London. You will film and edit highlight reels, behind-the-scenes content, and event documentation to share our story with the wider world.",
+      "responsibilities": [
+        "Film workshop sessions, team moments, and the flagship event",
+        "Edit and produce short-form and long-form video content",
+        "Create highlight reels and social media video clips",
+        "Collaborate with the Marketing and Social Media Officers on content strategy",
+        "Maintain an organised archive of all video footage and exports"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Experience filming and editing video content",
+        "Proficiency in video editing software (Premiere Pro, Final Cut, DaVinci Resolve, or equivalent)",
+        "Own camera or recording equipment preferred",
+        "Understanding of social media video formats and aspect ratios"
+      ],
+      "applyUrl": "",
+      "order": 5,
+      "status": "closed"
+    },
+    {
+      "slug": "events-officer",
+      "title": "Operations & Events Officer",
+      "category": "Officer",
+      "timeCommitment": "4–6 hrs/week",
+      "location": "London, UK",
+      "description": "The Operations & Events Officer is responsible for planning and executing the logistics of TEDxNortheasternU London events. From venue coordination to day-of operations, you will ensure every event runs smoothly and leaves a lasting impression on our audience.",
+      "responsibilities": [
+        "Coordinate venue bookings, layouts, and event logistics",
+        "Manage supplier and vendor relationships",
+        "Prepare run-of-show documents and event briefs",
+        "Oversee on-the-day setup, operations, and breakdown",
+        "Liaise with the Operations Officer on staffing and scheduling",
+        "Support post-event evaluation and debrief"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Experience in event planning or coordination is a plus",
+        "Strong project management and problem-solving skills",
+        "Calm under pressure and able to adapt quickly",
+        "Detail-oriented with the ability to manage multiple moving parts"
+      ],
+      "applyUrl": "",
+      "order": 6,
+      "status": "open"
+    },
+    {
+      "slug": "operations-officer",
+      "title": "Operations Officer",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Operations Officer ensures TEDxNortheasternU London runs like clockwork behind the scenes. You will manage internal workflows, coordinate team logistics, and support the smooth delivery of both the flagship event and day-to-day organisational operations.",
+      "responsibilities": [
+        "Oversee internal processes and team workflows",
+        "Coordinate scheduling and resource allocation across teams",
+        "Support the Events Officer with logistical planning",
+        "Maintain operational documentation and team handbooks",
+        "Identify and resolve operational bottlenecks proactively"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Highly organised with strong attention to process",
+        "Experience with project management tools is a plus",
+        "Collaborative and solutions-focused mindset",
+        "Reliable and able to work independently"
+      ],
+      "applyUrl": "",
+      "order": 7,
+      "status": "closed"
+    },
+    {
+      "slug": "outreach-officer",
+      "title": "Outreach Officer",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Outreach Officer builds and maintains relationships that extend TEDxNortheasternU London’s reach beyond campus. You will connect with external organisations, student groups, and communities to grow our network, attract diverse audiences, and create partnership opportunities.",
+      "responsibilities": [
+        "Identify and approach external organisations and communities for partnership",
+        "Maintain relationships with student societies, clubs, and external groups",
+        "Represent TEDxNortheasternU London at networking events and panels",
+        "Support audience development by extending reach to new communities",
+        "Coordinate with the Marketing Officer on outreach campaigns"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Confident communicator with strong interpersonal skills",
+        "Experience in community engagement, outreach, or partnerships is a plus",
+        "Enthusiastic about building relationships and representing the brand",
+        "Self-motivated and able to work with a high degree of autonomy"
+      ],
+      "applyUrl": "",
+      "order": 8,
+      "status": "open"
+    },
+    {
+      "slug": "social-media-officer",
+      "title": "Social Media Officer",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Social Media Officer manages the online presence of TEDxNortheasternU London. You will create and schedule content across our social platforms, grow our following, and build an engaged community that reflects the energy and values of our events.",
+      "responsibilities": [
+        "Manage and grow TEDxNortheasternU London’s social media accounts",
+        "Plan and execute a content calendar across Instagram, LinkedIn, and other platforms",
+        "Create engaging written and visual content in collaboration with the Media team",
+        "Monitor analytics and adapt strategy based on performance",
+        "Engage with followers and respond to messages and comments",
+        "Cover events live on social media where appropriate"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Active understanding of Instagram and LinkedIn best practices",
+        "Creative copywriter with a strong sense of tone and brand voice",
+        "Experience managing social media accounts (personal or professional)",
+        "Familiar with content scheduling tools (e.g. Later, Buffer, or equivalent)"
+      ],
+      "applyUrl": "",
+      "order": 9,
+      "status": "closed"
+    },
+    {
+      "slug": "sponsorship-officer",
+      "title": "Sponsorship Officer",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Sponsorship Officer is responsible for identifying, approaching, and managing relationships with sponsors and partners for TEDxNortheasternU London. You will play a key role in securing the funding and in-kind support that makes our events possible, building lasting partnerships with organisations that share our mission.",
+      "responsibilities": [
+        "Identify and research potential sponsors and partners aligned with our mission",
+        "Draft and send sponsorship proposals and outreach communications",
+        "Manage ongoing sponsor relationships and ensure expectations are met",
+        "Coordinate sponsor deliverables — branding, benefits, event presence",
+        "Maintain a pipeline of sponsorship leads and track progress",
+        "Support the Treasurer in financial reporting related to sponsorship income"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Strong written communication and negotiation skills",
+        "Confident in outreach and building professional relationships",
+        "Organised and able to manage a pipeline of contacts",
+        "Prior experience in sales, partnerships, or business development is a plus"
+      ],
+      "applyUrl": "",
+      "order": 10,
+      "status": "open"
+    },
+    {
+      "slug": "tech-officer",
+      "title": "Technology Officer",
+      "category": "Officer",
+      "timeCommitment": "3–5 hrs/week",
+      "location": "London, UK",
+      "description": "The Technology Officer manages the technology that powers TEDxNortheasternU London — from our website to AV setup at events. You will ensure our digital presence is polished, our event tech runs without a hitch, and the team has the tools it needs to operate effectively.",
+      "responsibilities": [
+        "Maintain and update the TEDxNortheasternU London website",
+        "Manage audio-visual setup and technical operations at events",
+        "Support the team with digital tools, platforms, and integrations",
+        "Troubleshoot technical issues quickly during events",
+        "Research and recommend tools to improve team operations"
+      ],
+      "requirements": [
+        "Currently enrolled at Northeastern University London",
+        "Knowledge of HTML, CSS, and JavaScript is essential",
+        "Knowledge of other web technologies is a plus",
+        "Experience with AV equipment or live event tech is beneficial",
+        "Strong problem-solving skills and ability to stay calm under pressure",
+        "Proactive and able to work independently"
+      ],
+      "applyUrl": "",
+      "order": 11,
+      "status": "open"
+    }
+  ]
+}

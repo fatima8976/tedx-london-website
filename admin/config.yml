@@ -1,0 +1,296 @@
+backend:
+  name: github
+  repo: "<github-username>/<repo-name>"
+  branch: main
+  base_url: "https://<oauth-worker-name>.<cloudflare-subdomain>.workers.dev"
+  auth_endpoint: "auth"
+
+publish_mode: editorial_workflow
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "roles"
+    label: "Open Positions"
+    files:
+      - name: "roles"
+        label: "Open Positions"
+        file: "content/roles.json"
+        fields:
+          - label: "Roles"
+            name: "roles"
+            widget: "list"
+            summary: "{{title}} — {{category}} ({{status}})"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers, and hyphens only"]}
+              - {label: "Category", name: "category", widget: "select", options: ["Officer", "Executive Committee"]}
+              - {label: "Status", name: "status", widget: "select", options: ["open", "closed", "draft"], default: "open"}
+              - {label: "Time Commitment", name: "timeCommitment", widget: "string"}
+              - {label: "Location", name: "location", widget: "string", default: "London, UK"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Responsibilities", name: "responsibilities", widget: "list"}
+              - {label: "Requirements", name: "requirements", widget: "list"}
+              - {label: "Apply URL", name: "applyUrl", widget: "string", hint: "Google Form link"}
+              - {label: "Order", name: "order", widget: "number", required: false}
+
+  - name: "articles"
+    label: "News Articles"
+    files:
+      - name: "articles"
+        label: "News Articles"
+        file: "content/articles.json"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            summary: "{{title}} — {{date}}"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers, and hyphens only"]}
+              - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Tag", name: "tag", widget: "string", hint: "e.g. Recap, Announcement"}
+              - {label: "Teaser", name: "teaser", widget: "text"}
+              - {label: "Body", name: "body", widget: "markdown"}
+              - {label: "External Link", name: "externalLink", widget: "string", required: false}
+              - {label: "Status", name: "status", widget: "select", options: ["draft", "published"], default: "draft"}
+
+  - name: "events"
+    label: "Events"
+    files:
+      - name: "events"
+        label: "Events"
+        file: "content/events.json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{title}} — {{date}}"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9-]+$", "Lowercase letters, numbers, and hyphens only"]}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Date", name: "date", widget: "datetime"}
+              - {label: "Time", name: "time", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Food Note", name: "foodNote", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Hero Image", name: "heroImage", widget: "image"}
+              - label: "Gallery"
+                name: "gallery"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt Text", name: "alt", widget: "string"}
+              - {label: "Concluded", name: "concluded", widget: "boolean", default: false}
+              - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Featured event drives the homepage flagship card"}
+
+  - name: "speakers"
+    label: "Speakers"
+    files:
+      - name: "speakers"
+        label: "Speakers"
+        file: "content/speakers.json"
+        fields:
+          - label: "Speakers"
+            name: "speakers"
+            widget: "list"
+            summary: "{{name}} — {{talkTitle}}"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Photo", name: "photo", widget: "image"}
+              - {label: "Role / Affiliation", name: "roleAffiliation", widget: "string"}
+              - {label: "Speaker Type", name: "speakerType", widget: "select", options: ["Student", "Industry"]}
+              - {label: "Talk Title", name: "talkTitle", widget: "string"}
+              - {label: "Bio", name: "bio", widget: "text"}
+              - {label: "Watch Link", name: "watchLink", widget: "string", required: false, hint: "YouTube URL"}
+              - {label: "Event Slug", name: "eventSlug", widget: "string", hint: "matches an Event's slug"}
+              - {label: "Order", name: "order", widget: "number", required: false}
+
+  - name: "members"
+    label: "Committee Members"
+    files:
+      - name: "members"
+        label: "Committee Members"
+        file: "content/members.json"
+        fields:
+          - label: "Committee Members"
+            name: "members"
+            widget: "list"
+            summary: "{{name}} — {{role}}"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Role", name: "role", widget: "string"}
+              - {label: "Photo", name: "photo", widget: "image", required: false}
+              - {label: "Group", name: "group", widget: "select", options: ["ExCo", "Officers"]}
+              - {label: "Order", name: "order", widget: "number"}
+
+  - name: "teams"
+    label: "Teams"
+    files:
+      - name: "teams"
+        label: "Teams"
+        file: "content/teams.json"
+        fields:
+          - label: "Teams"
+            name: "teams"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - {label: "Icon", name: "icon", widget: "string", hint: "an emoji"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Order", name: "order", widget: "number"}
+
+  - name: "sponsors"
+    label: "Sponsors"
+    files:
+      - name: "sponsors"
+        label: "Sponsors"
+        file: "content/sponsors.json"
+        fields:
+          - label: "Sponsors"
+            name: "sponsors"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Website URL", name: "websiteUrl", widget: "string"}
+              - {label: "Tier", name: "tier", widget: "select", options: ["Gold", "Silver", "Bronze"], required: false}
+              - {label: "Description", name: "description", widget: "text", required: false}
+              - {label: "Order", name: "order", widget: "number", required: false}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "Site Settings"
+        file: "content/settings.json"
+        fields:
+          - {label: "Instagram URL", name: "instagramUrl", widget: "string"}
+          - {label: "LinkedIn URL", name: "linkedinUrl", widget: "string"}
+          - {label: "WhatsApp URL", name: "whatsappUrl", widget: "string"}
+          - {label: "Contact Email", name: "contactEmail", widget: "string"}
+          - {label: "Footer Blurb", name: "footerBlurb", widget: "text"}
+
+  - name: "stats"
+    label: "Impact Stats"
+    files:
+      - name: "stats"
+        label: "Impact Stats"
+        file: "content/stats.json"
+        fields:
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            summary: "{{number}} {{label}}"
+            fields:
+              - {label: "Number", name: "number", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+
+  - name: "home"
+    label: "Homepage"
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "content/home.json"
+        fields:
+          - {label: "Hero Tag", name: "heroTag", widget: "string"}
+          - {label: "Hero Heading", name: "heroHeading", widget: "string"}
+          - {label: "Hero Subheading", name: "heroSubheading", widget: "text"}
+          - {label: "Hero Image", name: "heroImage", widget: "image"}
+          - {label: "Hero Primary Button Text", name: "heroPrimaryButtonText", widget: "string"}
+          - {label: "Hero Primary Button Link", name: "heroPrimaryButtonLink", widget: "string"}
+          - {label: "Hero Secondary Button Text", name: "heroSecondaryButtonText", widget: "string"}
+          - {label: "Hero Secondary Button Link", name: "heroSecondaryButtonLink", widget: "string"}
+          - {label: "About Label", name: "aboutLabel", widget: "string"}
+          - {label: "About Title", name: "aboutTitle", widget: "string"}
+          - {label: "About Paragraph 1", name: "aboutParagraph1", widget: "text"}
+          - {label: "About Paragraph 2", name: "aboutParagraph2", widget: "text"}
+          - {label: "About Image", name: "aboutImage", widget: "image"}
+          - {label: "Mission Label", name: "missionLabel", widget: "string"}
+          - {label: "Mission Title", name: "missionTitle", widget: "string"}
+          - {label: "Mission Quote", name: "missionQuote", widget: "text"}
+          - {label: "Mission Paragraph 1", name: "missionParagraph1", widget: "text"}
+          - {label: "Mission Paragraph 2", name: "missionParagraph2", widget: "text"}
+          - {label: "Mission Image", name: "missionImage", widget: "image"}
+          - label: "Carousel"
+            name: "carousel"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+
+  - name: "overview"
+    label: "Overview Page"
+    files:
+      - name: "overview"
+        label: "Overview Page"
+        file: "content/overview.json"
+        fields:
+          - {label: "Hero Label", name: "heroLabel", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Body", name: "heroBody", widget: "text"}
+          - {label: "Hero Image", name: "heroImage", widget: "image"}
+          - {label: "Intro Paragraph", name: "introParagraph", widget: "text"}
+          - {label: "Pull Quote", name: "pullQuote", widget: "text"}
+          - {label: "Closing Paragraph (Event)", name: "closingParagraphEvent", widget: "text"}
+          - {label: "Closing Paragraph (Mission)", name: "closingParagraphMission", widget: "text"}
+          - {label: "CTA Label", name: "ctaLabel", widget: "string"}
+          - {label: "CTA Title", name: "ctaTitle", widget: "string"}
+          - {label: "CTA Body", name: "ctaBody", widget: "text"}
+          - {label: "CTA Button 1 Text", name: "ctaButton1Text", widget: "string"}
+          - {label: "CTA Button 1 Link", name: "ctaButton1Link", widget: "string"}
+          - {label: "CTA Button 2 Text", name: "ctaButton2Text", widget: "string"}
+          - {label: "CTA Button 2 Link", name: "ctaButton2Link", widget: "string"}
+
+  - name: "workshop_series"
+    label: "Workshop Series Page"
+    files:
+      - name: "workshop_series"
+        label: "Workshop Series Page"
+        file: "content/workshop-series.json"
+        fields:
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Intro", name: "heroIntro", widget: "text"}
+          - {label: "Hero Image", name: "heroImage", widget: "image"}
+          - {label: "Intro Paragraph 1", name: "introParagraph1", widget: "text"}
+          - {label: "Intro Paragraph 2", name: "introParagraph2", widget: "text"}
+          - {label: "Pull Quote", name: "pullQuote", widget: "text"}
+          - {label: "Gallery Label", name: "galleryLabel", widget: "string"}
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+
+  - name: "sponsors_page"
+    label: "Sponsors Page"
+    files:
+      - name: "sponsors_page"
+        label: "Sponsors Page"
+        file: "content/sponsors-page.json"
+        fields:
+          - {label: "Hero Label", name: "heroLabel", widget: "string"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Subhead", name: "heroSubhead", widget: "text"}
+          - {label: "CTA Paragraph 1", name: "ctaParagraph1", widget: "text"}
+          - {label: "CTA Paragraph 2", name: "ctaParagraph2", widget: "text"}
+          - {label: "CTA Button Text", name: "ctaButtonText", widget: "string"}
+          - {label: "CTA Button Link", name: "ctaButtonLink", widget: "string"}
+
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/contact.json"
+        fields:
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Body", name: "body", widget: "text"}
+          - {label: "CTA Button Text", name: "ctaButtonText", widget: "string"}

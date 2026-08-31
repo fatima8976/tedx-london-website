@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "title": "Ideas. Change. Everything.",
+      "slug": "ideas-change-everything",
+      "tagline": "What if the ideas you doubt most are the ones worth chasing?",
+      "date": "2025-03-26",
+      "time": "6:00pm – 8:30pm GMT",
+      "location": "Room 136, Devon House",
+      "foodNote": "Drinks & food provided",
+      "description": "Rooted in the belief that transformative ideas are born at the edge of discomfort. By stepping beyond familiar perspectives, individuals can challenge assumptions, reshape narratives, and drive real change in the world around them.",
+      "heroImage": "/gallery/audience.JPG",
+      "gallery": [
+        { "src": "/gallery/fatima-lorena.JPG", "alt": "Fatima and Lorena at TEDxNortheasternU London" },
+        { "src": "/gallery/jack.jpg", "alt": "Jack Wagoner speaking on stage" },
+        { "src": "/gallery/wilder.JPG", "alt": "Wilder Carrigan speaking on stage" },
+        { "src": "/gallery/grace.jpg", "alt": "Grace Culver speaking on stage" },
+        { "src": "/gallery/sarah.JPG", "alt": "Sarah Lerma speaking on stage" },
+        { "src": "/gallery/audience.JPG", "alt": "Audience at TEDxNortheasternU London" },
+        { "src": "/gallery/james.JPG", "alt": "James Mathai speaking on stage" },
+        { "src": "/gallery/julia.jpg", "alt": "Julia Clark speaking on stage" },
+        { "src": "/gallery/sulayman.JPG", "alt": "Sulayman Sayes speaking on stage" },
+        { "src": "/gallery/asif.jpg", "alt": "Asif Sadiq speaking on stage" },
+        { "src": "/gallery/exco-and-speakers.jpg", "alt": "Executive committee and speakers together" }
+      ],
+      "concluded": true,
+      "featured": true
+    }
+  ]
+}

@@ -36,6 +36,7 @@
           <div class="dropdown-item-title">Members</div>
           <div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div>
         </a>
+        <a href="teams/" class="nav-dropdown-item"><div class="dropdown-item-title">Teams</div><div class="dropdown-item-desc">How we&rsquo;re organised behind the scenes.</div></a>
       </div>
     </div>
     <a href="join.html">Join</a>
@@ -70,16 +71,16 @@
   <!-- HERO -->
   <section class="hero hero-split">
     <div class="hero-content">
-      <div class="hero-tag">Northeastern University London</div>
-      <h1>Ideas worth<br><em>spreading.</em></h1>
-      <p class="hero-sub">Transformative ideas are born at the edge of discomfort. TEDxNortheasternU London brings together bold voices from across the Northeastern community and beyond.</p>
+      <div class="hero-tag" id="heroTag"></div>
+      <h1 id="heroHeading">&nbsp;</h1>
+      <p class="hero-sub" id="heroSubheading"></p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="events.html">Our Flagship Event &rarr;</a>
-        <a class="btn btn-outline" href="join.html">Join the Team</a>
+        <a class="btn btn-primary" id="heroPrimaryBtn" href="events.html">Our Flagship Event &rarr;</a>
+        <a class="btn btn-outline" id="heroSecondaryBtn" href="join.html">Join the Team</a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="hero-photo.jpg" alt="TEDxNortheasternU London team and speakers" loading="eager">
+      <img id="heroImage" src="hero-photo.jpg" alt="TEDxNortheasternU London team and speakers" loading="eager">
     </div>
     <div class="hero-scroll"><div class="scroll-line"></div> Scroll to explore</div>
   </section>
@@ -88,32 +89,15 @@
   <section class="about" id="about">
     <div class="about-grid">
       <div class="about-text reveal">
-        <div class="section-label">About Us</div>
-        <div class="section-title">Where curiosity meets community</div>
-        <p>TEDxNortheasternU London is an independently organised TEDx event run by students at Northeastern University London. We bring together the diverse voices of our global campus to share innovative ideas that challenge, inspire, and connect.</p>
-        <p>Inspired by TED's mission to discover and spread ideas that change the world, we create a space where bold thinking is celebrated and every perspective has a place.</p>
+        <div class="section-label" id="aboutLabel">About Us</div>
+        <div class="section-title" id="aboutTitle">Where curiosity meets community</div>
+        <p id="aboutParagraph1"></p>
+        <p id="aboutParagraph2"></p>
       </div>
       <div class="reveal" style="position:relative; border-radius:16px; overflow:hidden;">
-        <img src="gallery/audience.JPG" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
+        <img id="aboutImage" src="gallery/audience.JPG" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
         <div style="position:absolute; inset:0; background:rgba(235,0,40,0.82);"></div>
-        <div style="position:relative; z-index:1; display:grid; grid-template-columns:1fr 1fr;">
-          <div style="padding:2.5rem 2rem; border-right:1px solid rgba(255,255,255,0.18); border-bottom:1px solid rgba(255,255,255,0.18); text-align:center;">
-            <div style="font-family:var(--font-display); font-size:clamp(3rem,4.5vw,4.5rem); font-style:italic; color:#fff; line-height:1;">8</div>
-            <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-top:0.6rem;">Speakers Featured</div>
-          </div>
-          <div style="padding:2.5rem 2rem; border-bottom:1px solid rgba(255,255,255,0.18); text-align:center;">
-            <div style="font-family:var(--font-display); font-size:clamp(3rem,4.5vw,4.5rem); font-style:italic; color:#fff; line-height:1;">1</div>
-            <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-top:0.6rem;">Flagship Event</div>
-          </div>
-          <div style="padding:2.5rem 2rem; border-right:1px solid rgba(255,255,255,0.18); text-align:center;">
-            <div style="font-family:var(--font-display); font-size:clamp(3rem,4.5vw,4.5rem); font-style:italic; color:#fff; line-height:1;">2025</div>
-            <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-top:0.6rem;">Inaugural Year</div>
-          </div>
-          <div style="padding:2.5rem 2rem; text-align:center;">
-            <div style="font-family:var(--font-display); font-size:clamp(3rem,4.5vw,4.5rem); font-style:italic; color:#fff; line-height:1;">&infin;</div>
-            <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-top:0.6rem;">Ideas to Spread</div>
-          </div>
-        </div>
+        <div id="statsGrid" style="position:relative; z-index:1; display:grid; grid-template-columns:1fr 1fr;"></div>
       </div>
     </div>
   </section>
@@ -122,14 +106,14 @@
   <section class="tedx-info">
     <div class="content reveal" style="max-width:none; display:flex; gap:4rem; align-items:flex-start;">
       <div style="flex:0 0 500px;">
-        <div class="section-label">What is TEDx?</div>
-        <div class="section-title">A grassroots initiative</div>
-        <blockquote>&ldquo;Ideas worth spreading &mdash; in your community.&rdquo;</blockquote>
-        <p>TEDx is a grassroots initiative created in the spirit of TED's overall mission to discover and spread ideas that matter. TEDx brings the spirit of TED to local communities around the globe through independently organised events.</p>
-        <p>These events are organised by passionate individuals who seek to uncover new ideas and share the latest research, sparking conversations in their communities. TEDx events include live speakers and TED Talk videos to spark deep discussion and connection in a small group.</p>
+        <div class="section-label" id="missionLabel">What is TEDx?</div>
+        <div class="section-title" id="missionTitle">A grassroots initiative</div>
+        <blockquote id="missionQuote"></blockquote>
+        <p id="missionParagraph1"></p>
+        <p id="missionParagraph2"></p>
       </div>
       <div style="flex:1; align-self:center; padding-right:4rem;">
-        <img src="tedx-stage.jpg" alt="TEDx stage with large red letters" style="width:100%; border-radius:12px; display:block;">
+        <img id="missionImage" src="tedx-stage.jpg" alt="TEDx stage with large red letters" style="width:100%; border-radius:12px; display:block;">
       </div>
     </div>
   </section>
@@ -139,34 +123,23 @@
     <div class="reveal">
       <div class="section-label">Our Inaugural Event</div>
     </div>
-    <div class="flagship-card reveal">
+    <div class="flagship-card reveal" id="flagshipCard">
       <div class="flagship-header">
-        <img class="flagship-bg" src="gallery/wilder.JPG" alt="">
+        <img class="flagship-bg" id="flagshipBg" src="gallery/wilder.JPG" alt="">
         <div class="flagship-header-text">
-          <div class="flagship-eyebrow">26 March 2025</div>
-          <div class="flagship-theme">Ideas. Change. <span>Everything.</span></div>
-          <p class="flagship-desc">Rooted in the belief that transformative ideas are born at the edge of discomfort. Through diverse talks spanning storytelling, leadership, and entrepreneurship, this event brought together voices from across the Northeastern community and beyond.</p>
+          <div class="flagship-eyebrow" id="flagshipEyebrow"></div>
+          <div class="flagship-theme" id="flagshipTheme"></div>
+          <p class="flagship-desc" id="flagshipDesc"></p>
         </div>
       </div>
-      <div class="flagship-photos">
-        <img src="gallery/jack.jpg" alt="Jack Wagoner">
-        <img src="gallery/audience.JPG" alt="Audience">
-        <img src="gallery/grace.jpg" alt="Grace Culver">
-        <img src="gallery/wilder.JPG" alt="Wilder Carrigan">
-        <img src="gallery/sarah.JPG" alt="Sarah Lerma">
-        <img src="gallery/james.JPG" alt="James Mathai">
-        <img src="gallery/julia.jpg" alt="Julia Clark">
-        <img src="gallery/sulayman.JPG" alt="Sulayman Sayes">
-        <img src="gallery/asif.jpg" alt="Asif Sadiq">
-        <img src="gallery/exco-and-speakers.jpg" alt="ExCo and Speakers">
-      </div>
+      <div class="flagship-photos" id="flagshipPhotos"></div>
       <div class="flagship-details">
-        <div class="flagship-detail"><div class="icon">&#128197;</div><div><div class="label">Date</div><div class="value">Thursday, 26 March 2025</div></div></div>
-        <div class="flagship-detail"><div class="icon">&#128336;</div><div><div class="label">Time</div><div class="value">6:00pm &ndash; 8:30pm</div></div></div>
-<div class="flagship-detail"><div class="icon">&#127869;</div><div><div class="label">Catering</div><div class="value">Drinks &amp; food provided</div></div></div>
+        <div class="flagship-detail"><div class="icon">&#128197;</div><div><div class="label">Date</div><div class="value" id="flagshipDate"></div></div></div>
+        <div class="flagship-detail"><div class="icon">&#128336;</div><div><div class="label">Time</div><div class="value" id="flagshipTime"></div></div></div>
+        <div class="flagship-detail" id="flagshipFoodDetail"><div class="icon">&#127869;</div><div><div class="label">Catering</div><div class="value" id="flagshipFood"></div></div></div>
       </div>
       <div class="flagship-cta">
-        <a class="btn btn-primary" href="events.html">View Full Event Page &rarr;</a>
+        <a class="btn btn-primary" id="flagshipCtaLink" href="events.html">View Full Event Page &rarr;</a>
       </div>
     </div>
   </section>
@@ -177,42 +150,7 @@
       <div class="section-label">News</div>
       <div class="section-title">Latest from TEDxNortheasternU London</div>
     </div>
-    <div class="reveal" style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:2.5rem; margin-bottom:2rem;">
-
-      <a href="news.html" style="text-decoration:none; display:block; border-radius:12px; overflow:hidden; border:1px solid var(--border); transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
-        <div style="position:relative; overflow:hidden;">
-          <img src="gallery/audience.JPG" alt="" style="width:100%; height:180px; object-fit:cover; object-position:center 40%; display:block;">
-          <span style="position:absolute; top:0.9rem; left:0.9rem; background:var(--red); color:#fff; font-size:0.62rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.65rem; border-radius:999px;">Coming Soon</span>
-        </div>
-        <div style="padding:1.25rem 1.4rem 1.5rem; background:var(--bg-secondary);">
-          <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.5rem;">Event Recap</div>
-          <div style="font-family:var(--font-display); font-size:1.1rem; font-style:italic; color:var(--text-primary); line-height:1.35;">Ideas. Change. Everything. &mdash; a look back</div>
-        </div>
-      </a>
-
-      <a href="news.html" style="text-decoration:none; display:block; border-radius:12px; overflow:hidden; border:1px solid var(--border); transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
-        <div style="position:relative; overflow:hidden;">
-          <img src="gallery/exco-and-speakers.jpg" alt="" style="width:100%; height:180px; object-fit:cover; object-position:center 70%; display:block;">
-          <span style="position:absolute; top:0.9rem; left:0.9rem; background:var(--red); color:#fff; font-size:0.62rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.65rem; border-radius:999px;">Coming Soon</span>
-        </div>
-        <div style="padding:1.25rem 1.4rem 1.5rem; background:var(--bg-secondary);">
-          <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.5rem;">Behind the Scenes</div>
-          <div style="font-family:var(--font-display); font-size:1.1rem; font-style:italic; color:var(--text-primary); line-height:1.35;">Meet the team who made it happen</div>
-        </div>
-      </a>
-
-      <a href="news.html" style="text-decoration:none; display:block; border-radius:12px; overflow:hidden; border:1px solid var(--border); transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
-        <div style="position:relative; overflow:hidden;">
-          <img src="gallery/sulayman.JPG" alt="" style="width:100%; height:180px; object-fit:cover; object-position:center 48%; display:block;">
-          <span style="position:absolute; top:0.9rem; left:0.9rem; background:var(--red); color:#fff; font-size:0.62rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.2rem 0.65rem; border-radius:999px;">Coming Soon</span>
-        </div>
-        <div style="padding:1.25rem 1.4rem 1.5rem; background:var(--bg-secondary);">
-          <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.5rem;">Speaker Spotlight</div>
-          <div style="font-family:var(--font-display); font-size:1.1rem; font-style:italic; color:var(--text-primary); line-height:1.35;">Voices from the stage</div>
-        </div>
-      </a>
-
-    </div>
+    <div class="reveal" style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:2.5rem; margin-bottom:2rem;" id="home-news-grid"></div>
     <div class="reveal">
       <a class="btn btn-outline" href="news.html">See All News &rarr;</a>
     </div>
@@ -231,5 +169,7 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>

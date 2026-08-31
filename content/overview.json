@@ -1,0 +1,17 @@
+{
+  "heroLabel": "About Us",
+  "heroTitle": "Our Background, Reach & Impact",
+  "heroBody": "TEDxNortheasternU London is a student-run organisation bringing together bold thinkers to share ideas that matter.",
+  "heroImage": "/gallery/exco-and-speakers.jpg",
+  "introParagraph": "We are part of the global TEDx community — a grassroots network of events that bring the spirit of TED to local communities around the world.",
+  "pullQuote": "Every student has an idea worth spreading.",
+  "closingParagraphEvent": "Our inaugural event, Ideas. Change. Everything., took place on 26 March 2025, bringing together 8 speakers — students and industry leaders — to share ideas that challenge assumptions and spark conversation.",
+  "closingParagraphMission": "We believe that every student has an idea worth spreading. Our mission is to create a space where those ideas can be heard, celebrated, and acted upon.",
+  "ctaLabel": "Get Involved",
+  "ctaTitle": "Be part of the story",
+  "ctaBody": "Whether you want to join the team, attend our next event, or watch the talks from our inaugural event — there's a place for you here.",
+  "ctaButton1Text": "Watch the Talks →",
+  "ctaButton1Link": "/events.html",
+  "ctaButton2Text": "Join the Team",
+  "ctaButton2Link": "/join.html"
+}

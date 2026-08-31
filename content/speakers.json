@@ -1,0 +1,92 @@
+{
+  "speakers": [
+    {
+      "name": "Sarah Lerma",
+      "photo": "/speakers/sarah-lerma.jpg",
+      "roleAffiliation": "English & Criminal Justice · Northeastern University",
+      "speakerType": "Student",
+      "talkTitle": "Who do you become when you stop living for others’ expectations?",
+      "bio": "Sarah shares a powerful reflection on breaking free from external pressures and redefining identity on your own terms. She invites us to question who we are, and who we choose to be. Through her academic and personal experiences, Sarah explores how individuals navigate pressure, redefine success, and build a sense of self on their own terms.",
+      "watchLink": "https://www.youtube.com/watch?v=G1X04zdOr_k",
+      "eventSlug": "ideas-change-everything",
+      "order": 1
+    },
+    {
+      "name": "Julia Clark",
+      "photo": "/speakers/julia-clark.jpg",
+      "roleAffiliation": "Psychology · Northeastern University London",
+      "speakerType": "Student",
+      "talkTitle": "What if modern beauty isn’t as empowering as we think?",
+      "bio": "Julia questions the narratives surrounding beauty today, exploring how they shape identity, self-worth, and perception. She invites us to rethink whether what we call empowerment is truly freedom, or something more complex. Through her research including her dissertation, Julia explores the intersection of beauty, perception, and mental health, bringing a critical and evidence-based perspective to widely accepted social norms.",
+      "watchLink": "https://www.youtube.com/watch?v=j5pN-v9tlc0",
+      "eventSlug": "ideas-change-everything",
+      "order": 2
+    },
+    {
+      "name": "Wilder Carrigan",
+      "photo": "/speakers/wilder-carrigan.jpg",
+      "roleAffiliation": "Business & Corporate Innovation · Northeastern University",
+      "speakerType": "Student",
+      "talkTitle": "What if confidence isn’t something you’re born with, but something you build?",
+      "bio": "Wilder challenges the idea of waiting until you feel ‘ready,’ showing how action itself is what creates confidence. He reframes fear and uncertainty as the starting point, not the barrier, to growth. Alongside his academic work, Wilder engages in content creation and innovation-driven initiatives, exploring how mindset and action shape growth and opportunity.",
+      "watchLink": "https://www.youtube.com/watch?v=tRZv4LrmEKE",
+      "eventSlug": "ideas-change-everything",
+      "order": 3
+    },
+    {
+      "name": "Jack Wagoner",
+      "photo": "/speakers/jack-wagoner.jpg",
+      "roleAffiliation": "Behavioural Neuroscience · Northeastern University",
+      "speakerType": "Student",
+      "talkTitle": "What if everything you’ve been told about success is wrong?",
+      "bio": "Jack questions whether achievement alone can ever truly fulfil us, challenging the belief that external milestones define our worth. He invites us to rethink what it really means to live a meaningful life. Jack is the host of The Grateful Podcast, a globally ranked show with over 120 episodes exploring mindset, success, and human potential.",
+      "watchLink": "https://www.youtube.com/watch?v=3jKtM1qNT1A",
+      "eventSlug": "ideas-change-everything",
+      "order": 4
+    },
+    {
+      "name": "Grace Culver",
+      "photo": "/speakers/grace-culver.jpg",
+      "roleAffiliation": "International Affairs & Political Science · Northeastern University",
+      "speakerType": "Student",
+      "talkTitle": "What if the differences we see in others are the very things keeping us apart?",
+      "bio": "Grace explores how our perceptions of difference can quietly shape the way we connect, often creating distance where there doesn’t need to be any. She invites us to look beyond these barriers and reconsider how we relate to one another. Active in Model United Nations, Grace engages in discussions around diplomacy, communication, and cross-cultural understanding.",
+      "watchLink": "https://www.youtube.com/watch?v=vedjm2reFws",
+      "eventSlug": "ideas-change-everything",
+      "order": 5
+    },
+    {
+      "name": "James Mathai",
+      "photo": "/speakers/james-mathai.jpg",
+      "roleAffiliation": "Bioengineering & Biochemistry · Northeastern University",
+      "speakerType": "Student",
+      "talkTitle": "What if the biggest mistake we make about others happens in a split second?",
+      "bio": "James explores how we form instant judgments, and how these ‘completion moments’ lead us to reduce people to assumptions rather than understanding their full complexity. He challenges us to pause, question our certainty, and resist the instinct to finish someone else’s story too soon.",
+      "watchLink": "",
+      "eventSlug": "ideas-change-everything",
+      "order": 6
+    },
+    {
+      "name": "Asif Sadiq",
+      "photo": "/speakers/asif-sadiq.jpg",
+      "roleAffiliation": "Chief Inclusion Officer · Warner Bros. Discovery",
+      "speakerType": "Industry",
+      "talkTitle": "What if the real barrier to innovation isn’t ideas, but inclusion?",
+      "bio": "Dr. Asif reveals how fear silences voices and how a lack of diversity limits our ability to meet a global market. He challenges leaders to create spaces where every perspective drives better decisions. With extensive experience in leadership and inclusion, Asif works at the intersection of business, culture, and social impact within one of the world’s leading media organisations.",
+      "watchLink": "https://www.youtube.com/watch?v=TNnuYQwXpSA",
+      "eventSlug": "ideas-change-everything",
+      "order": 7
+    },
+    {
+      "name": "Sulayman Sayes",
+      "photo": "/speakers/sulayman-sayes.jpg",
+      "roleAffiliation": "Legal Assistant · Bott and Co",
+      "speakerType": "Industry",
+      "talkTitle": "What if the ideas you doubt most are the ones worth chasing?",
+      "bio": "Sulayman explores how taking chances on the unexpected can open doors you never imagined. He challenges us to step beyond hesitation and trust where bold decisions can lead. Through his work at Bott and Co, a UK firm specialising in consumer claims, he’s building a strong foundation in analytical thinking, problem-solving, and professional practice.",
+      "watchLink": "",
+      "eventSlug": "ideas-change-everything",
+      "order": 8
+    }
+  ]
+}

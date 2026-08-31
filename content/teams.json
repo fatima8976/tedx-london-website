@@ -1,0 +1,40 @@
+{
+  "teams": [
+    {
+      "icon": "🎤",
+      "title": "Curation",
+      "description": "Scout and coach speakers. Shape the narrative arc of our events and ensure every talk resonates with the audience.",
+      "order": 1
+    },
+    {
+      "icon": "🎨",
+      "title": "Design & Media",
+      "description": "Create the visual identity — from branding and social content to stage design and event photography.",
+      "order": 2
+    },
+    {
+      "icon": "📣",
+      "title": "Marketing",
+      "description": "Grow our audience, run campaigns, manage socials, and get the word out across campus and beyond.",
+      "order": 3
+    },
+    {
+      "icon": "⚙️",
+      "title": "Operations & Logistics",
+      "description": "The engine behind every event — venue, AV, catering, scheduling, and making sure it all runs seamlessly.",
+      "order": 4
+    },
+    {
+      "icon": "🤝",
+      "title": "Sponsorship",
+      "description": "Build partnerships with brands, departments, and organisations that share our mission and values.",
+      "order": 5
+    },
+    {
+      "icon": "💡",
+      "title": "Speaker Relations",
+      "description": "Manage communication with speakers from first contact to post-event, ensuring the best experience on stage.",
+      "order": 6
+    }
+  ]
+}

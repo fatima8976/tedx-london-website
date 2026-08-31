@@ -1,0 +1,17 @@
+{
+  "heroTitle": "Speaker Workshop Series",
+  "heroIntro": "Before the stage, there's the workshop. A 6 week series of sessions helping student speakers craft their stories, develop their ideas, and find their voice.",
+  "heroImage": "/workshop-series-photos/week-1/IMG_3862.JPG",
+  "introParagraph1": "Our workshop series ran in the lead-up to the flagship event, giving student speakers the tools and confidence to take the TEDx stage. Each session focused on a different dimension of the talk-building process.",
+  "introParagraph2": "From finding your idea to crafting your narrative and delivering with impact — the workshops were a space for experimentation, feedback, and growth.",
+  "pullQuote": "Every great talk starts long before the spotlight.",
+  "galleryLabel": "From the sessions",
+  "gallery": [
+    { "src": "/workshop-series-photos/week-2/IMG_3976.JPG", "alt": "Workshop series — week 2 session" },
+    { "src": "/workshop-series-photos/week-1/IMG_3836.JPG", "alt": "Workshop series — week 1 session" },
+    { "src": "/workshop-series-photos/week-1/IMG_3851.JPG", "alt": "Workshop series — week 1 session" },
+    { "src": "/workshop-series-photos/week-1/IMG_3866.JPG", "alt": "Workshop series — week 1 session" },
+    { "src": "/workshop-series-photos/week-2/IMG_3987.JPG", "alt": "Workshop series — week 2 session" },
+    { "src": "/workshop-series-photos/speaker-2/IMG_4243.JPG", "alt": "Workshop series — speaker session" }
+  ]
+}

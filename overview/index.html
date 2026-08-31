@@ -20,6 +20,7 @@
       <div class="nav-dropdown-menu" id="aboutDropdown">
         <a href="../overview/" class="nav-dropdown-item active-item"><div class="dropdown-item-title">Overview</div><div class="dropdown-item-desc">Learn about our background, reach, and impact.</div></a>
         <a href="../members/" class="nav-dropdown-item"><div class="dropdown-item-title">Members</div><div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div></a>
+        <a href="../teams/" class="nav-dropdown-item"><div class="dropdown-item-title">Teams</div><div class="dropdown-item-desc">How we&rsquo;re organised behind the scenes.</div></a>
         
       </div>
     </div>
@@ -44,12 +45,12 @@
 <div class="page-hero" style="padding-top: 7rem; padding-bottom: 4rem;">
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
     <div>
-      <div class="section-label">About Us</div>
-      <div class="section-title">Our Background, Reach &amp; Impact</div>
-      <p>TEDxNortheasternU London is a student-run organisation bringing together bold thinkers to share ideas that matter.</p>
+      <div class="section-label" id="ovHeroLabel">About Us</div>
+      <div class="section-title" id="ovHeroTitle">Our Background, Reach &amp; Impact</div>
+      <p id="ovHeroBody"></p>
     </div>
     <div style="display:flex; justify-content:center;">
-      <img src="../gallery/exco-and-speakers.jpg" alt="TEDxNortheasternU London team and speakers" style="width:100%; max-width:580px; height:400px; object-fit:cover; object-position:center 20%; display:block; border-radius:16px;">
+      <img id="ovHeroImage" src="../gallery/exco-and-speakers.jpg" alt="TEDxNortheasternU London team and speakers" style="width:100%; max-width:580px; height:400px; object-fit:cover; object-position:center 20%; display:block; border-radius:16px;">
     </div>
   </div>
 </div>
@@ -58,55 +59,38 @@
 <section style="padding: 5rem 3rem; background: var(--bg-primary); border-top: 1px solid var(--border);">
 
   <div class="reveal" style="max-width:700px; margin:0 auto 5rem; text-align:center;">
-    <p style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;">We are part of the global TEDx community — a grassroots network of events that bring the spirit of TED to local communities around the world.</p>
+    <p id="ovIntroParagraph" style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;"></p>
   </div>
 
   <!-- Pull quote -->
   <div class="reveal" style="max-width:780px; margin:0 auto 5rem; text-align:center;">
     <div style="width:48px; height:3px; background:var(--red); margin:0 auto 2rem; border-radius:2px;"></div>
-    <p style="font-family:var(--font-display); font-size:clamp(2.2rem,4vw,3.4rem); font-style:italic; color:var(--text-primary); line-height:1.3; margin:0;">Every student has an idea worth spreading.</p>
+    <p id="ovPullQuote" style="font-family:var(--font-display); font-size:clamp(2.2rem,4vw,3.4rem); font-style:italic; color:var(--text-primary); line-height:1.3; margin:0;"></p>
     <div style="width:48px; height:3px; background:var(--red); margin:2rem auto 0; border-radius:2px;"></div>
   </div>
 
   <!-- Two-col closing -->
   <div class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; max-width:1100px; margin:0 auto;">
-    <p style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;">Our inaugural event, <em>Ideas. Change. Everything.</em>, took place on 26 March 2025, bringing together 8 speakers — students and industry leaders — to share ideas that challenge assumptions and spark conversation.</p>
-    <p style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;">We believe that every student has an idea worth spreading. Our mission is to create a space where those ideas can be heard, celebrated, and acted upon.</p>
+    <p id="ovClosingEvent" style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;"></p>
+    <p id="ovClosingMission" style="font-size:1.1rem; font-weight:300; color:var(--text-secondary); line-height:1.9; margin:0;"></p>
   </div>
 
 </section>
 
 <!-- Stats -->
 <section style="padding: 5rem 3rem; background: #111;">
-  <div class="reveal" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); text-align:center;">
-    <div style="padding:2rem; border-right:1px solid rgba(255,255,255,0.08);">
-      <div style="font-family:var(--font-display); font-size:clamp(3.5rem,6vw,5.5rem); font-style:italic; color:var(--red); line-height:1;">8</div>
-      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-top:0.75rem;">Speakers</div>
-    </div>
-    <div style="padding:2rem; border-right:1px solid rgba(255,255,255,0.08);">
-      <div style="font-family:var(--font-display); font-size:clamp(3.5rem,6vw,5.5rem); font-style:italic; color:var(--red); line-height:1;">1</div>
-      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-top:0.75rem;">Flagship Event</div>
-    </div>
-    <div style="padding:2rem; border-right:1px solid rgba(255,255,255,0.08);">
-      <div style="font-family:var(--font-display); font-size:clamp(3.5rem,6vw,5.5rem); font-style:italic; color:var(--red); line-height:1;">2025</div>
-      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-top:0.75rem;">Inaugural Year</div>
-    </div>
-    <div style="padding:2rem;">
-      <div style="font-family:var(--font-display); font-size:clamp(3.5rem,6vw,5.5rem); font-style:italic; color:var(--red); line-height:1;">&infin;</div>
-      <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-top:0.75rem;">Ideas to Spread</div>
-    </div>
-  </div>
+  <div class="reveal" id="ovStatsGrid" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); text-align:center;"></div>
 </section>
 
 <!-- CTA -->
 <section style="padding: 5rem 3rem; background: var(--bg-primary); border-top: 1px solid var(--border);">
   <div class="reveal" style="max-width:700px; margin:0 auto; text-align:center;">
-    <div class="section-label" style="margin-bottom:0.75rem;">Get Involved</div>
-    <div class="section-title" style="margin-bottom:1.5rem;">Be part of the story</div>
-    <p style="font-size:1rem; font-weight:300; color:var(--text-secondary); line-height:1.8; margin-bottom:2.5rem;">Whether you want to join the team, attend our next event, or watch the talks from our inaugural event — there's a place for you here.</p>
+    <div class="section-label" id="ovCtaLabel" style="margin-bottom:0.75rem;">Get Involved</div>
+    <div class="section-title" id="ovCtaTitle" style="margin-bottom:1.5rem;">Be part of the story</div>
+    <p id="ovCtaBody" style="font-size:1rem; font-weight:300; color:var(--text-secondary); line-height:1.8; margin-bottom:2.5rem;"></p>
     <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-      <a class="btn btn-primary" href="../events.html">Watch the Talks &rarr;</a>
-      <a class="btn btn-outline" href="../join.html">Join the Team</a>
+      <a class="btn btn-primary" id="ovCtaBtn1" href="../events.html">Watch the Talks &rarr;</a>
+      <a class="btn btn-outline" id="ovCtaBtn2" href="../join.html">Join the Team</a>
     </div>
   </div>
 </section>
@@ -124,5 +108,7 @@
   <div class="footer-bottom"><p>&copy; 2026 TEDxNortheasternU London &middot; All Rights Reserved</p><div class="footer-nav-links"><a href="../overview/">About</a><a href="../join.html">Join</a><a href="../events.html">Flagship Event</a><a href="../workshop-series/">Workshop Series</a><a href="../sponsors.html">Sponsor</a><a href="../news.html">News</a><a href="../contact.html">Contact</a></div></div>
 </footer>
 <script src="../js/main.js"></script>
+<script src="../js/settings.js"></script>
+<script src="../js/overview.js"></script>
 </body>
 </html>

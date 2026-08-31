@@ -36,6 +36,7 @@
           <div class="dropdown-item-title">Members</div>
           <div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div>
         </a>
+        <a href="teams/" class="nav-dropdown-item"><div class="dropdown-item-title">Teams</div><div class="dropdown-item-desc">How we&rsquo;re organised behind the scenes.</div></a>
       </div>
     </div>
     <a href="join.html">Join</a>
@@ -69,17 +70,19 @@
 
   <!-- PAGE HERO -->
   <div class="page-hero" style="text-align: center;">
-    <div class="section-label" style="justify-content: center;">Our Partners</div>
-    <div class="section-title" style="margin: 0 auto;">Our Partners</div>
-    <p style="margin-left: auto; margin-right: auto;">We partner with organisations that share our belief in the power of ideas to drive change.</p>
+    <div class="section-label" id="spHeroLabel" style="justify-content: center;">Our Partners</div>
+    <div class="section-title" id="spHeroTitle" style="margin: 0 auto;">Our Partners</div>
+    <p id="spHeroSubhead" style="margin-left: auto; margin-right: auto;"></p>
   </div>
+
+  <div id="sponsorsGrid" style="max-width:1000px; margin: 0 auto; padding: 0 3rem;"></div>
 
   <!-- SPONSORS CONTENT -->
   <section class="sponsors" style="border-top: 1px solid rgba(235,0,40,0.08); background: linear-gradient(135deg, rgba(235,0,40,0.07) 0%, var(--bg-primary) 55%);">
-    <p class="cta-text reveal">Sponsorship opportunities available. We&rsquo;d love to have you on board.</p>
-    <p class="cta-text reveal" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-muted);">Partnering with TEDxNortheasternU London gives your organisation direct access to a community of ambitious, globally-minded students and professionals at Northeastern University London.</p>
+    <p class="cta-text reveal" id="spCtaParagraph1"></p>
+    <p class="cta-text reveal" id="spCtaParagraph2" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-muted);"></p>
     <div class="mt-2 reveal">
-      <a href="contact.html" class="btn btn-primary">Get in Touch &rarr;</a>
+      <a href="contact.html" class="btn btn-primary" id="spCtaBtn">Get in Touch &rarr;</a>
     </div>
   </section>
 
@@ -95,5 +98,7 @@
   <div class="footer-bottom"><p>&copy; 2026 TEDxNortheasternU London &middot; All Rights Reserved</p><div class="footer-nav-links"><a href="overview/">About</a><a href="join.html">Join</a><a href="events.html">Flagship Event</a><a href="workshop-series/">Workshop Series</a><a href="sponsors.html">Sponsor</a><a href="news.html">News</a><a href="contact.html">Contact</a></div></div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/sponsors.js"></script>
 </body>
 </html>

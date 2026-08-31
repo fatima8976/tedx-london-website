@@ -36,6 +36,7 @@
           <div class="dropdown-item-title">Members</div>
           <div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div>
         </a>
+        <a href="teams/" class="nav-dropdown-item"><div class="dropdown-item-title">Teams</div><div class="dropdown-item-desc">How we&rsquo;re organised behind the scenes.</div></a>
       </div>
     </div>
     <a href="join.html">Join</a>
@@ -72,19 +73,19 @@
     <div class="flag-hero-inner">
       <div class="flag-hero-content">
         <div class="flag-badge">Inaugural Event &middot; 2025</div>
-        <h1>Ideas. Change. <em>Everything.</em></h1>
+        <h1 id="flagTitle">&nbsp;</h1>
         <p class="flag-hero-subtitle">TEDxNortheasternU London &middot; Inaugural Event</p>
         <div class="flag-pills">
-          <span class="flag-pill"><span class="pill-emoji">&#128197;</span> Thursday, 26 March 2025</span>
-          <span class="flag-pill"><span class="pill-emoji">&#128336;</span> 6:00pm &ndash; 8:30pm GMT</span>
-          <span class="flag-pill"><span class="pill-emoji">&#128205;</span> Room 136, Devon House</span>
-          <span class="flag-pill"><span class="pill-emoji">&#127869;</span> Drinks &amp; food provided</span>
+          <span class="flag-pill"><span class="pill-emoji">&#128197;</span> <span id="flagPillDate"></span></span>
+          <span class="flag-pill"><span class="pill-emoji">&#128336;</span> <span id="flagPillTime"></span></span>
+          <span class="flag-pill"><span class="pill-emoji">&#128205;</span> <span id="flagPillLocation"></span></span>
+          <span class="flag-pill" id="flagPillFoodWrap"><span class="pill-emoji">&#127869;</span> <span id="flagPillFood"></span></span>
         </div>
-        <p class="flag-desc">Rooted in the belief that transformative ideas are born at the edge of discomfort. By stepping beyond familiar perspectives, individuals can challenge assumptions, reshape narratives, and drive real change in the world around them.</p>
-        <div class="event-concluded">&#10003; This event has concluded &middot; Thank you to everyone who attended</div>
+        <p class="flag-desc" id="flagDesc"></p>
+        <div class="event-concluded" id="flagConcluded" style="display:none;">&#10003; This event has concluded &middot; Thank you to everyone who attended</div>
       </div>
       <div class="flag-hero-img">
-        <img src="gallery/audience.JPG" alt="Audience at TEDxNortheasternU London" loading="lazy">
+        <img id="flagHeroImg" src="gallery/audience.JPG" alt="" loading="lazy">
       </div>
     </div>
   </section>
@@ -95,7 +96,7 @@
       <div class="content reveal">
         <div class="section-label">The Theme</div>
         <div class="section-title">Born at the edge of discomfort</div>
-        <blockquote>&ldquo;What if the ideas you doubt most are the ones worth chasing?&rdquo;</blockquote>
+        <blockquote id="flagTagline"></blockquote>
         <p>&ldquo;Ideas. Change. Everything.&rdquo; explored how transformative ideas emerge when we step beyond what&#39;s familiar. Our speakers challenged assumptions across identity, confidence, inclusion, beauty, and belonging.</p>
         <p>Through an evening of diverse talks spanning storytelling, leadership, and entrepreneurship, our inaugural event brought the spirit of TED to the Northeastern London community for the very first time.</p>
       </div>
@@ -114,97 +115,13 @@
     </div>
 
     <div class="speaker-type-divider reveal">Student Speakers</div>
-
-     <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/jack-wagoner.jpg" alt="Jack Wagoner" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Jack Wagoner</div>
-        <div class="speaker-full-role">Behavioural Neuroscience &middot; Northeastern University</div>
-        <div class="speaker-talk-title">What if everything you&rsquo;ve been told about success is wrong?</div>
-        <p class="speaker-full-desc">Jack questions whether achievement alone can ever truly fulfil us, challenging the belief that external milestones define our worth. He invites us to rethink what it really means to live a meaningful life.</p>
-        <a href="https://www.youtube.com/watch?v=3jKtM1qNT1A" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
-      </div>
-    </div>
-
-      <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/wilder-carrigan.jpg" alt="Wilder Carrigan" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Wilder Carrigan</div>
-        <div class="speaker-full-role">Business &amp; Corporate Innovation &middot; Northeastern University</div>
-        <div class="speaker-talk-title">What if confidence isn&rsquo;t something you&rsquo;re born with, but something you build?</div>
-        <p class="speaker-full-desc">Wilder challenges the idea of waiting until you feel &lsquo;ready,&rsquo; showing how action itself is what creates confidence. He reframes fear and uncertainty as the starting point, not the barrier, to growth.</p>
-        <a href="https://www.youtube.com/watch?v=tRZv4LrmEKE" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
-      </div>
-    </div>
-
-    <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/grace-culver.jpg" alt="Grace Culver" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Grace Culver</div>
-        <div class="speaker-full-role">International Affairs &amp; Political Science &middot; Northeastern University</div>
-        <div class="speaker-talk-title">What if the differences we see in others are the very things keeping us apart?</div>
-        <p class="speaker-full-desc">Grace explores how our perceptions of difference can quietly shape the way we connect, often creating distance where there doesn&rsquo;t need to be any. She invites us to look beyond these barriers and reconsider how we relate to one another.</p>
-        <a href="https://www.youtube.com/watch?v=vedjm2reFws" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
-      </div>
-    </div>
-
-    <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/sarah-lerma.jpg" alt="Sarah Lerma" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Sarah Lerma</div>
-        <div class="speaker-full-role">English &amp; Criminal Justice &middot; Northeastern University</div>
-        <div class="speaker-talk-title">Who do you become when you stop living for others&rsquo; expectations?</div>
-        <p class="speaker-full-desc">Sarah shares a powerful reflection on breaking free from external pressures and redefining identity on your own terms. She invites us to question who we are, and who we choose to be. </p>
-        <a href="https://www.youtube.com/watch?v=G1X04zdOr_k" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
-      </div>
-    </div>
-
-    <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/julia-clark.jpg" alt="Julia Clark" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Julia Clark</div>
-        <div class="speaker-full-role">Psychology &middot; Northeastern University London</div>
-        <div class="speaker-talk-title">What if modern beauty isn&rsquo;t as empowering as we think?</div>
-        <p class="speaker-full-desc">Through her research including her dissertation, Julia explores the intersection of beauty, perception, and mental health, bringing a critical and evidence based perspective to widely accepted social norms.</p>
-        <a href="https://www.youtube.com/watch?v=j5pN-v9tlc0" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
-      </div>
-    </div>
-
-    <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/james-mathai.jpg" alt="James Mathai" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">James Mathai</div>
-        <div class="speaker-full-role">Bioengineering &amp; Biochemistry &middot; Northeastern University</div>
-        <div class="speaker-talk-title">What if the biggest mistake we make about others happens in a split second?</div>
-        <p class="speaker-full-desc">James explores how we form instant judgments, and how these &lsquo;completion moments&rsquo; lead us to reduce people to assumptions rather than understanding their full complexity. He challenges us to pause, question our certainty, and resist the instinct to finish someone else&rsquo;s story too soon.</p>
-      </div>
-    </div>
+    <div id="studentSpeakers"></div>
 
   </section>
 
   <section style="padding: 3rem 3rem; background: var(--bg-secondary);">
     <div class="speaker-type-divider reveal">Industry Speakers</div>
-
-    <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/asif-sadiq.jpg" alt="Asif Sadiq" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Asif Sadiq</div>
-        <div class="speaker-full-role">Chief Inclusion Officer &middot; Warner Bros. Discovery</div>
-        <div class="speaker-talk-title">What if the real barrier to innovation isn&rsquo;t ideas, but inclusion?</div>
-        <p class="speaker-full-desc">Dr. Asif reveals how fear silences voices and how a lack of diversity limits our ability to meet a global market. He challenges leaders to create spaces where every perspective drives better decisions.</p>
-        <a href="https://www.youtube.com/watch?v=TNnuYQwXpSA" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
-      </div>
-    </div>
-
-    <div class="speaker-full reveal">
-      <div class="speaker-full-photo"><img src="speakers/sulayman-sayes.jpg" alt="Sulayman Sayes" loading="lazy"></div>
-      <div>
-        <div class="speaker-full-name">Sulayman Sayes</div>
-        <div class="speaker-full-role">Legal Assistant &middot; Bott and Co</div>
-        <div class="speaker-talk-title">What if the ideas you doubt most are the ones worth chasing?</div>
-        <p class="speaker-full-desc">Sulayman explores how taking chances on the unexpected can open doors you never imagined. He challenges us to step beyond hesitation and trust where bold decisions can lead.</p>
-      </div>
-    </div>
+    <div id="industrySpeakers"></div>
   </section>
 
   <!-- PHOTO GALLERY -->
@@ -235,5 +152,7 @@
   <div class="footer-bottom"><p>&copy; 2026 TEDxNortheasternU London &middot; All Rights Reserved</p><div class="footer-nav-links"><a href="overview/">About</a><a href="join.html">Join</a><a href="events.html">Flagship Event</a><a href="workshop-series/">Workshop Series</a><a href="sponsors.html">Sponsor</a><a href="news.html">News</a><a href="contact.html">Contact</a></div></div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/events.js"></script>
 </body>
 </html>
