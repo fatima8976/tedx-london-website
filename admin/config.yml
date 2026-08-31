@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: "<github-username>/<repo-name>"
+  repo: "fatima8976/tedx-london-website"
   branch: main
-  base_url: "https://<oauth-worker-name>.<cloudflare-subdomain>.workers.dev"
+  base_url: "https://tedx-cms-auth.fatimahmad126.workers.dev"
   auth_endpoint: "auth"
 
 publish_mode: editorial_workflow
