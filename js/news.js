@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       articles.forEach(function (article) {
         var card = document.createElement('a');
-        card.href = 'articles/article.html?slug=' + encodeURIComponent(article.slug);
+        card.href = 'articles/article?slug=' + encodeURIComponent(article.slug);
         card.className = 'news-card reveal';
 
         var imageWrap = document.createElement('div');

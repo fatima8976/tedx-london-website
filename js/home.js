@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
       foodDetail.style.display = 'none';
     }
 
-    document.getElementById('flagshipCtaLink').href = 'events.html?slug=' + encodeURIComponent(event.slug);
+    document.getElementById('flagshipCtaLink').href = 'events?slug=' + encodeURIComponent(event.slug);
 
     var photos = document.getElementById('flagshipPhotos');
     (event.gallery || []).forEach(function (photo) {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     published.forEach(function (article) {
       var card = document.createElement('a');
-      card.href = 'articles/article.html?slug=' + encodeURIComponent(article.slug);
+      card.href = 'articles/article?slug=' + encodeURIComponent(article.slug);
       card.style.cssText = 'text-decoration:none; display:block; border-radius:12px; overflow:hidden; border:1px solid var(--border);';
 
       var imageWrap = document.createElement('div');

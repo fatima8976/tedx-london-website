@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       roles.forEach(function (role) {
         var link = document.createElement('a');
-        link.href = 'roles/role.html?slug=' + encodeURIComponent(role.slug);
+        link.href = 'roles/role?slug=' + encodeURIComponent(role.slug);
         link.className = 'open-position-card-link reveal';
 
         var card = document.createElement('div');
