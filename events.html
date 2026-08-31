@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flagship Event | TEDxNortheasternU London</title>
+<meta name="description" content="TEDxNortheasternU London is a student-run organisation bringing together bold thinkers to share ideas that matter.">
+<meta name="theme-color" content="#EB0028">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<script>
+  (function() {
+    var t = localStorage.getItem('tedx-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<nav id="navbar">
+  <div class="nav-logo">
+      <a href="index.html">
+        <img class="logo-black" src="logo-black.png" alt="TEDxNortheasternU London" height="28">
+        <img class="logo-white" src="logo-white.png" alt="TEDxNortheasternU London" height="28">
+      </a>
+    </div>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="overview/" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">About <span class="dropdown-caret">&#9660;</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="overview/" class="nav-dropdown-item">
+          <div class="dropdown-item-title">Overview</div>
+          <div class="dropdown-item-desc">Learn about our background, reach, and impact.</div>
+        </a>
+        <a href="members/" class="nav-dropdown-item">
+          <div class="dropdown-item-title">Members</div>
+          <div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div>
+        </a>
+      </div>
+    </div>
+    <a href="join.html">Join</a>
+    <div class="nav-dropdown">
+      <a href="events.html" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">Events <span class="dropdown-caret">&#9660;</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="events.html" class="nav-dropdown-item"><div class="dropdown-item-title">Flagship Event</div><div class="dropdown-item-desc">Ideas. Change. Everything. &mdash; our inaugural 2025 event.</div></a>
+        <a href="workshop-series/" class="nav-dropdown-item"><div class="dropdown-item-title">Workshop Series</div><div class="dropdown-item-desc">Behind-the-scenes sessions helping speakers find their voice.</div></a>
+      </div>
+    </div>
+    <a href="sponsors.html">Sponsor</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a class="nav-cta" href="events.html">Explore our flagship &rarr;</a>
+  </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" onclick="toggleTheme()">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+  <div class="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+  <!-- FLAGSHIP HERO -->
+  <section class="flag-hero" style="padding-top: 7rem;">
+    <div class="flag-hero-inner">
+      <div class="flag-hero-content">
+        <div class="flag-badge">Inaugural Event &middot; 2025</div>
+        <h1>Ideas. Change. <em>Everything.</em></h1>
+        <p class="flag-hero-subtitle">TEDxNortheasternU London &middot; Inaugural Event</p>
+        <div class="flag-pills">
+          <span class="flag-pill"><span class="pill-emoji">&#128197;</span> Thursday, 26 March 2025</span>
+          <span class="flag-pill"><span class="pill-emoji">&#128336;</span> 6:00pm &ndash; 8:30pm GMT</span>
+          <span class="flag-pill"><span class="pill-emoji">&#128205;</span> Room 136, Devon House</span>
+          <span class="flag-pill"><span class="pill-emoji">&#127869;</span> Drinks &amp; food provided</span>
+        </div>
+        <p class="flag-desc">Rooted in the belief that transformative ideas are born at the edge of discomfort. By stepping beyond familiar perspectives, individuals can challenge assumptions, reshape narratives, and drive real change in the world around them.</p>
+        <div class="event-concluded">&#10003; This event has concluded &middot; Thank you to everyone who attended</div>
+      </div>
+      <div class="flag-hero-img">
+        <img src="gallery/audience.JPG" alt="Audience at TEDxNortheasternU London" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- THEME SECTION -->
+  <section class="theme-section">
+    <div class="theme-split">
+      <div class="content reveal">
+        <div class="section-label">The Theme</div>
+        <div class="section-title">Born at the edge of discomfort</div>
+        <blockquote>&ldquo;What if the ideas you doubt most are the ones worth chasing?&rdquo;</blockquote>
+        <p>&ldquo;Ideas. Change. Everything.&rdquo; explored how transformative ideas emerge when we step beyond what&#39;s familiar. Our speakers challenged assumptions across identity, confidence, inclusion, beauty, and belonging.</p>
+        <p>Through an evening of diverse talks spanning storytelling, leadership, and entrepreneurship, our inaugural event brought the spirit of TED to the Northeastern London community for the very first time.</p>
+      </div>
+      <div class="theme-photo reveal">
+        <img src="born-edge-of-comfort.JPG" alt="Speaker on stage at TEDxNortheasternU London" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL SPEAKER DETAILS -->
+  <section style="background: var(--bg-primary); padding: 5rem 3rem 3rem;">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label">Our Speakers</div>
+      <div class="section-title" style="margin:0 auto;">The voices behind the ideas</div>
+      <p class="section-intro" style="margin-left:auto;margin-right:auto;">This lineup spans students, professionals, and industry leaders &mdash; each bringing their unique backgrounds, experiences, and knowledge to the stage.</p>
+    </div>
+
+    <div class="speaker-type-divider reveal">Student Speakers</div>
+
+     <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/jack-wagoner.jpg" alt="Jack Wagoner" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Jack Wagoner</div>
+        <div class="speaker-full-role">Behavioural Neuroscience &middot; Northeastern University</div>
+        <div class="speaker-talk-title">What if everything you&rsquo;ve been told about success is wrong?</div>
+        <p class="speaker-full-desc">Jack questions whether achievement alone can ever truly fulfil us, challenging the belief that external milestones define our worth. He invites us to rethink what it really means to live a meaningful life.</p>
+        <a href="https://www.youtube.com/watch?v=3jKtM1qNT1A" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
+      </div>
+    </div>
+
+      <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/wilder-carrigan.jpg" alt="Wilder Carrigan" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Wilder Carrigan</div>
+        <div class="speaker-full-role">Business &amp; Corporate Innovation &middot; Northeastern University</div>
+        <div class="speaker-talk-title">What if confidence isn&rsquo;t something you&rsquo;re born with, but something you build?</div>
+        <p class="speaker-full-desc">Wilder challenges the idea of waiting until you feel &lsquo;ready,&rsquo; showing how action itself is what creates confidence. He reframes fear and uncertainty as the starting point, not the barrier, to growth.</p>
+        <a href="https://www.youtube.com/watch?v=tRZv4LrmEKE" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
+      </div>
+    </div>
+
+    <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/grace-culver.jpg" alt="Grace Culver" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Grace Culver</div>
+        <div class="speaker-full-role">International Affairs &amp; Political Science &middot; Northeastern University</div>
+        <div class="speaker-talk-title">What if the differences we see in others are the very things keeping us apart?</div>
+        <p class="speaker-full-desc">Grace explores how our perceptions of difference can quietly shape the way we connect, often creating distance where there doesn&rsquo;t need to be any. She invites us to look beyond these barriers and reconsider how we relate to one another.</p>
+        <a href="https://www.youtube.com/watch?v=vedjm2reFws" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
+      </div>
+    </div>
+
+    <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/sarah-lerma.jpg" alt="Sarah Lerma" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Sarah Lerma</div>
+        <div class="speaker-full-role">English &amp; Criminal Justice &middot; Northeastern University</div>
+        <div class="speaker-talk-title">Who do you become when you stop living for others&rsquo; expectations?</div>
+        <p class="speaker-full-desc">Sarah shares a powerful reflection on breaking free from external pressures and redefining identity on your own terms. She invites us to question who we are, and who we choose to be. </p>
+        <a href="https://www.youtube.com/watch?v=G1X04zdOr_k" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
+      </div>
+    </div>
+
+    <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/julia-clark.jpg" alt="Julia Clark" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Julia Clark</div>
+        <div class="speaker-full-role">Psychology &middot; Northeastern University London</div>
+        <div class="speaker-talk-title">What if modern beauty isn&rsquo;t as empowering as we think?</div>
+        <p class="speaker-full-desc">Through her research including her dissertation, Julia explores the intersection of beauty, perception, and mental health, bringing a critical and evidence based perspective to widely accepted social norms.</p>
+        <a href="https://www.youtube.com/watch?v=j5pN-v9tlc0" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
+      </div>
+    </div>
+
+    <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/james-mathai.jpg" alt="James Mathai" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">James Mathai</div>
+        <div class="speaker-full-role">Bioengineering &amp; Biochemistry &middot; Northeastern University</div>
+        <div class="speaker-talk-title">What if the biggest mistake we make about others happens in a split second?</div>
+        <p class="speaker-full-desc">James explores how we form instant judgments, and how these &lsquo;completion moments&rsquo; lead us to reduce people to assumptions rather than understanding their full complexity. He challenges us to pause, question our certainty, and resist the instinct to finish someone else&rsquo;s story too soon.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="padding: 3rem 3rem; background: var(--bg-secondary);">
+    <div class="speaker-type-divider reveal">Industry Speakers</div>
+
+    <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/asif-sadiq.jpg" alt="Asif Sadiq" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Asif Sadiq</div>
+        <div class="speaker-full-role">Chief Inclusion Officer &middot; Warner Bros. Discovery</div>
+        <div class="speaker-talk-title">What if the real barrier to innovation isn&rsquo;t ideas, but inclusion?</div>
+        <p class="speaker-full-desc">Dr. Asif reveals how fear silences voices and how a lack of diversity limits our ability to meet a global market. He challenges leaders to create spaces where every perspective drives better decisions.</p>
+        <a href="https://www.youtube.com/watch?v=TNnuYQwXpSA" target="_blank" class="watch-link"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"/></svg> Watch Talk</a>
+      </div>
+    </div>
+
+    <div class="speaker-full reveal">
+      <div class="speaker-full-photo"><img src="speakers/sulayman-sayes.jpg" alt="Sulayman Sayes" loading="lazy"></div>
+      <div>
+        <div class="speaker-full-name">Sulayman Sayes</div>
+        <div class="speaker-full-role">Legal Assistant &middot; Bott and Co</div>
+        <div class="speaker-talk-title">What if the ideas you doubt most are the ones worth chasing?</div>
+        <p class="speaker-full-desc">Sulayman explores how taking chances on the unexpected can open doors you never imagined. He challenges us to step beyond hesitation and trust where bold decisions can lead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section style="padding: 5rem 3rem; background: var(--bg-primary); border-top: 1px solid var(--border);">
+    <div class="reveal">
+      <div class="section-label">Photo Gallery</div>
+      <div class="section-title">From the evening</div>
+      <p style="font-size:1.05rem; font-weight:300; color:var(--text-secondary); line-height:1.7; max-width:600px; margin-top:1rem;">A glimpse into TEDxNortheasternU London&rsquo;s inaugural event at Devon House, March 2025.</p>
+    </div>
+    <div class="photo-carousel">
+      <img id="carouselBg" class="carousel-bg" src="gallery/fatima-lorena.JPG" alt="" aria-hidden="true">
+      <img id="carouselImg" class="carousel-img" src="gallery/fatima-lorena.JPG" alt="TEDxNortheasternU London">
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">&#8249;</button>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">&#8250;</button>
+      <div class="carousel-counter" id="carouselCounter">1 / 11</div>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><a href="index.html"><img class="logo-black" src="logo-black.png" alt="TEDxNortheasternU London" height="28"><img class="logo-white" src="logo-white.png" alt="TEDxNortheasternU London" height="28"></a></div>
+      <p style="font-size:0.88rem;color:var(--text-muted);max-width:260px;margin-top:0.8rem;line-height:1.6;">A student-run TEDx event at Northeastern University London. Independently organised under licence from TED.</p>
+    </div>
+    <div class="footer-col"><div class="footer-col-title">Navigate</div><a href="overview/">About</a><a href="join.html">Join</a><a href="events.html">Flagship Event</a><a href="workshop-series/">Workshop Series</a><a href="sponsors.html">Sponsor</a><a href="news.html">News</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><div class="footer-col-title">Connect</div><div class="footer-socials"><a href="https://www.instagram.com/tedxnortheasternuldn/" aria-label="Instagram" class="footer-social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a><a href="https://www.linkedin.com/company/tedxnortheasternulondon/" aria-label="LinkedIn" class="footer-social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://chat.whatsapp.com/BKGOq3QgryHH0Sns6kz0Xc?mode=wwt" aria-label="WhatsApp" class="footer-social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 TEDxNortheasternU London &middot; All Rights Reserved</p><div class="footer-nav-links"><a href="overview/">About</a><a href="join.html">Join</a><a href="events.html">Flagship Event</a><a href="workshop-series/">Workshop Series</a><a href="sponsors.html">Sponsor</a><a href="news.html">News</a><a href="contact.html">Contact</a></div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

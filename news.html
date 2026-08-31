@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News | TEDxNortheasternU London</title>
+<meta name="description" content="TEDxNortheasternU London is a student-run organisation bringing together bold thinkers to share ideas that matter.">
+<meta name="theme-color" content="#EB0028">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<script>
+  (function() {
+    var t = localStorage.getItem('tedx-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<nav id="navbar">
+  <div class="nav-logo">
+      <a href="index.html">
+        <img class="logo-black" src="logo-black.png" alt="TEDxNortheasternU London" height="28">
+        <img class="logo-white" src="logo-white.png" alt="TEDxNortheasternU London" height="28">
+      </a>
+    </div>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="overview/" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">About <span class="dropdown-caret">&#9660;</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="overview/" class="nav-dropdown-item">
+          <div class="dropdown-item-title">Overview</div>
+          <div class="dropdown-item-desc">Learn about our background, reach, and impact.</div>
+        </a>
+        <a href="members/" class="nav-dropdown-item">
+          <div class="dropdown-item-title">Members</div>
+          <div class="dropdown-item-desc">Meet the team who brings TEDxNortheasternU London to life.</div>
+        </a>
+      </div>
+    </div>
+    <a href="join.html">Join</a>
+    <div class="nav-dropdown">
+      <a href="events.html" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">Events <span class="dropdown-caret">&#9660;</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="events.html" class="nav-dropdown-item"><div class="dropdown-item-title">Flagship Event</div><div class="dropdown-item-desc">Ideas. Change. Everything. &mdash; our inaugural 2025 event.</div></a>
+        <a href="workshop-series/" class="nav-dropdown-item"><div class="dropdown-item-title">Workshop Series</div><div class="dropdown-item-desc">Behind-the-scenes sessions helping speakers find their voice.</div></a>
+      </div>
+    </div>
+    <a href="sponsors.html">Sponsor</a>
+    <a href="news.html" class="active">News</a>
+    <a href="contact.html">Contact</a>
+    <a class="nav-cta" href="events.html">Explore our flagship &rarr;</a>
+  </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" onclick="toggleTheme()">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+  <div class="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+  <!-- CINEMATIC HERO -->
+  <div style="position:relative; height:82vh; min-height:540px; overflow:hidden; display:flex; align-items:center; justify-content:center; text-align:center;">
+    <img src="gallery/exco-and-speakers.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 20%; display:block;">
+    <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.75) 100%);"></div>
+    <div style="position:relative; z-index:1; padding:2rem; max-width:800px;">
+      <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:1.5rem;">TEDxNortheasternU London</div>
+      <h1 style="font-family:var(--font-display); font-size:clamp(4rem,10vw,8.5rem); font-style:italic; color:#fff; line-height:1; margin:0 0 1.75rem; letter-spacing:-0.01em;">News &amp; Updates</h1>
+      <p style="font-size:1rem; font-weight:300; color:rgba(255,255,255,0.65); max-width:420px; margin:0 auto; line-height:1.9;">Announcements, recaps, and stories from TEDxNortheasternU London. More coming soon.</p>
+    </div>
+    <div style="position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:0.5rem; opacity:0.45;">
+      <div style="width:1px; height:48px; background:#fff; animation: pulse 2s ease-in-out infinite;"></div>
+      <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:#fff;">Scroll</span>
+    </div>
+  </div>
+
+  <!-- ANIMATED TICKER -->
+  <div style="background:var(--red); overflow:hidden; padding:0.85rem 0; white-space:nowrap; position:relative;">
+    <div style="display:inline-flex; animation:newsMarquee 28s linear infinite;">
+      <span style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#fff; padding-right:4rem;">NEWS &nbsp;&nbsp;&middot;&nbsp;&nbsp; COMING SOON &nbsp;&nbsp;&middot;&nbsp;&nbsp; STAY TUNED &nbsp;&nbsp;&middot;&nbsp;&nbsp; FOLLOW US &nbsp;&nbsp;&middot;&nbsp;&nbsp; TEDxNORTHEASTERNU LONDON &nbsp;&nbsp;&middot;&nbsp;&nbsp; IDEAS WORTH SPREADING &nbsp;&nbsp;&middot;&nbsp;&nbsp; MARCH 2025 &nbsp;&nbsp;&middot;&nbsp;&nbsp; DEVON HOUSE &nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+      <span style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#fff; padding-right:4rem;">NEWS &nbsp;&nbsp;&middot;&nbsp;&nbsp; COMING SOON &nbsp;&nbsp;&middot;&nbsp;&nbsp; STAY TUNED &nbsp;&nbsp;&middot;&nbsp;&nbsp; FOLLOW US &nbsp;&nbsp;&middot;&nbsp;&nbsp; TEDxNORTHEASTERNU LONDON &nbsp;&nbsp;&middot;&nbsp;&nbsp; IDEAS WORTH SPREADING &nbsp;&nbsp;&middot;&nbsp;&nbsp; MARCH 2025 &nbsp;&nbsp;&middot;&nbsp;&nbsp; DEVON HOUSE &nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+      <span style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#fff; padding-right:4rem;">NEWS &nbsp;&nbsp;&middot;&nbsp;&nbsp; COMING SOON &nbsp;&nbsp;&middot;&nbsp;&nbsp; STAY TUNED &nbsp;&nbsp;&middot;&nbsp;&nbsp; FOLLOW US &nbsp;&nbsp;&middot;&nbsp;&nbsp; TEDxNORTHEASTERNU LONDON &nbsp;&nbsp;&middot;&nbsp;&nbsp; IDEAS WORTH SPREADING &nbsp;&nbsp;&middot;&nbsp;&nbsp; MARCH 2025 &nbsp;&nbsp;&middot;&nbsp;&nbsp; DEVON HOUSE &nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- COMING SOON + SOCIAL -->
+  <section style="padding: 5rem 3rem 5rem; background: linear-gradient(135deg, rgba(235,0,40,0.10) 0%, var(--bg-secondary) 45%, rgba(235,0,40,0.06) 100%); border-top: 1px solid var(--border);">
+    <div style="max-width:1100px; margin:0 auto;">
+
+      <div class="reveal" style="padding-bottom:4.5rem; border-bottom:1px solid var(--border); margin-bottom:4.5rem; max-width:640px; margin-left:auto; margin-right:auto; text-align:center;">
+        <div class="section-label" style="margin-bottom:0.75rem;">Coming Soon</div>
+        <p style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem); font-style:italic; color:var(--text-primary); line-height:1.3; margin:0 0 1.25rem;">Stories worth telling are on their way.</p>
+        <p style="font-size:0.92rem; font-weight:300; color:var(--text-muted); line-height:1.8; margin:0;">We&rsquo;re working on event recaps, behind-the-scenes features, and announcements. Check back soon &mdash; or follow us to hear it first.</p>
+      </div>
+
+      <!-- Social cards -->
+      <div class="reveal" style="text-align:center;">
+        <div class="section-label" style="margin-bottom:0.75rem;">Follow Along</div>
+        <p style="font-size:1rem; font-weight:300; color:var(--text-secondary); margin-bottom:2.5rem; line-height:1.8; max-width:480px; margin-left:auto; margin-right:auto;">Follow us for real-time updates, event previews, and behind-the-scenes content before it hits the news feed.</p>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
+
+          <a href="https://www.instagram.com/tedxnortheasternuldn/" target="_blank" rel="noopener" style="display:block; background:var(--bg-primary); border:1px solid var(--border); border-radius:16px; padding:2rem 1.75rem; text-decoration:none; transition:border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='rgba(235,0,40,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--red)" stroke-width="1.5" style="margin-bottom:1.25rem; display:block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="var(--red)" stroke="none"/></svg>
+            <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.4rem;">Instagram</div>
+            <div style="font-size:1rem; font-weight:500; color:var(--text-primary); margin-bottom:1rem;">@tedxnortheasternuldn</div>
+            <div style="font-size:0.82rem; font-weight:600; color:var(--red);">Follow us &rarr;</div>
+          </a>
+
+          <a href="https://www.linkedin.com/company/tedxnortheasternulondon/" target="_blank" rel="noopener" style="display:block; background:var(--bg-primary); border:1px solid var(--border); border-radius:16px; padding:2rem 1.75rem; text-decoration:none; transition:border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='rgba(235,0,40,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--red)" stroke-width="1.5" style="margin-bottom:1.25rem; display:block;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.4rem;">LinkedIn</div>
+            <div style="font-size:1rem; font-weight:500; color:var(--text-primary); margin-bottom:1rem;">TEDxNortheasternU London</div>
+            <div style="font-size:0.82rem; font-weight:600; color:var(--red);">Connect &rarr;</div>
+          </a>
+
+          <a href="https://chat.whatsapp.com/BKGOq3QgryHH0Sns6kz0Xc?mode=wwt" target="_blank" rel="noopener" style="display:block; background:var(--bg-primary); border:1px solid var(--border); border-radius:16px; padding:2rem 1.75rem; text-decoration:none; transition:border-color 0.2s, transform 0.2s;" onmouseover="this.style.borderColor='rgba(235,0,40,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="var(--red)" style="margin-bottom:1.25rem; display:block;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.4rem;">WhatsApp</div>
+            <div style="font-size:1rem; font-weight:500; color:var(--text-primary); margin-bottom:1rem;">Community Group</div>
+            <div style="font-size:0.82rem; font-weight:600; color:var(--red);">Join us &rarr;</div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED RECAP CARD -->
+  <section style="padding: 5rem 3rem; background: linear-gradient(135deg, rgba(235,0,40,0.06) 0%, var(--bg-primary) 55%); border-top: 1px solid rgba(235,0,40,0.08);">
+    <div class="reveal" style="max-width:1100px; margin:0 auto;">
+      <div class="section-label" style="margin-bottom:0.75rem;">From the Archive</div>
+      <div class="section-title" style="margin-bottom:2.5rem;">Our Inaugural Event</div>
+      <a href="events.html" style="display:grid; grid-template-columns:1.1fr 1fr; gap:0; border-radius:16px; overflow:hidden; border:1px solid var(--border); text-decoration:none; transition:box-shadow 0.25s;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0,0,0,0.12)'" onmouseout="this.style.boxShadow='none'">
+        <div style="position:relative; overflow:hidden;">
+          <img src="gallery/audience.JPG" alt="Ideas. Change. Everything." style="width:100%; height:340px; object-fit:cover; object-position:center; display:block; transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+          <div style="position:absolute; top:1.25rem; left:1.25rem; background:var(--red); color:#fff; font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border-radius:999px;">Recap</div>
+        </div>
+        <div style="padding:3rem; background:var(--bg-secondary); display:flex; flex-direction:column; justify-content:center;">
+          <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.75rem;">26 March 2025</div>
+          <div style="font-family:var(--font-display); font-size:clamp(1.6rem,2.8vw,2.4rem); color:var(--text-primary); line-height:1.15; margin-bottom:1rem; font-style:italic;">Ideas. Change. Everything.</div>
+          <p style="font-size:0.9rem; font-weight:300; color:var(--text-secondary); line-height:1.75; margin-bottom:2rem;">Our inaugural flagship event brought together 8 speakers. Explore the talks, the stories, and the ideas that started it all.</p>
+          <span style="font-size:0.85rem; font-weight:600; color:var(--red);">View the event &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><a href="index.html"><img class="logo-black" src="logo-black.png" alt="TEDxNortheasternU London" height="28"><img class="logo-white" src="logo-white.png" alt="TEDxNortheasternU London" height="28"></a></div>
+      <p style="font-size:0.88rem;color:var(--text-muted);max-width:260px;margin-top:0.8rem;line-height:1.6;">A student-run TEDx event at Northeastern University London. Independently organised under licence from TED.</p>
+    </div>
+    <div class="footer-col"><div class="footer-col-title">Navigate</div><a href="overview/">About</a><a href="join.html">Join</a><a href="events.html">Flagship Event</a><a href="workshop-series/">Workshop Series</a><a href="sponsors.html">Sponsor</a><a href="news.html">News</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><div class="footer-col-title">Connect</div><div class="footer-socials"><a href="https://www.instagram.com/tedxnortheasternuldn/" aria-label="Instagram" class="footer-social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a><a href="https://www.linkedin.com/company/tedxnortheasternulondon/" aria-label="LinkedIn" class="footer-social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://chat.whatsapp.com/BKGOq3QgryHH0Sns6kz0Xc?mode=wwt" aria-label="WhatsApp" class="footer-social-link" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 TEDxNortheasternU London &middot; All Rights Reserved</p><div class="footer-nav-links"><a href="overview/">About</a><a href="join.html">Join</a><a href="events.html">Flagship Event</a><a href="workshop-series/">Workshop Series</a><a href="sponsors.html">Sponsor</a><a href="news.html">News</a><a href="contact.html">Contact</a></div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
