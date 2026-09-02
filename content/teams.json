@@ -1,40 +1,34 @@
 {
   "teams": [
     {
-      "icon": "🎤",
-      "title": "Curation",
-      "description": "Scout and coach speakers. Shape the narrative arc of our events and ensure every talk resonates with the audience.",
+      "icon": "📸",
+      "title": "Media",
+      "description": "Capture our story on camera — from event photography to videography, bringing every talk and moment to life visually.",
       "order": 1
     },
     {
       "icon": "🎨",
-      "title": "Design & Media",
-      "description": "Create the visual identity — from branding and social content to stage design and event photography.",
+      "title": "Design & Marketing",
+      "description": "Shape our visual identity and grow our audience — from branding and social content to campaigns that get the word out across campus and beyond.",
       "order": 2
     },
     {
-      "icon": "📣",
-      "title": "Marketing",
-      "description": "Grow our audience, run campaigns, manage socials, and get the word out across campus and beyond.",
+      "icon": "⚙️",
+      "title": "Events",
+      "description": "The engine behind every event — venue, AV, catering, scheduling, and making sure it all runs seamlessly.",
       "order": 3
     },
     {
-      "icon": "⚙️",
-      "title": "Operations & Logistics",
-      "description": "The engine behind every event — venue, AV, catering, scheduling, and making sure it all runs seamlessly.",
-      "order": 4
-    },
-    {
       "icon": "🤝",
-      "title": "Sponsorship",
-      "description": "Build partnerships with brands, departments, and organisations that share our mission and values.",
-      "order": 5
+      "title": "Outreach",
+      "description": "Build relationships beyond our campus — from community partnerships and sponsorships to connecting with organisations that share our mission.",
+      "order": 4
     },
     {
       "icon": "💡",
       "title": "Speaker Relations",
       "description": "Manage communication with speakers from first contact to post-event, ensuring the best experience on stage.",
-      "order": 6
+      "order": 5
     }
   ]
 }
