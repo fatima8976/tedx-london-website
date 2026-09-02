@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var badge = document.createElement('span');
         badge.className = 'open-badge';
-        badge.textContent = 'Open';
+        badge.textContent = 'Opening Soon';
 
         meta.appendChild(tag);
         meta.appendChild(badge);
