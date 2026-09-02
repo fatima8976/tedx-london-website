@@ -1,14 +1,14 @@
 {
   "roles": [
     {
-      "slug": "junior-vice-president",
-      "title": "Junior Vice President",
+      "slug": "vice-president",
+      "title": "Vice President",
       "category": "Executive Committee",
-      "timeCommitment": "4–6 hrs/week",
+      "timeCommitment": "4\u20136 hrs/week",
       "location": "London, UK",
-      "description": "The Junior Vice President supports the Senior Vice President and President in the day-to-day running of TEDxNortheasternU London. You will help coordinate across teams, act as a key point of contact between officers and executive leadership, and step in where needed to keep operations running smoothly.",
+      "description": "The Vice President supports the President in the day-to-day running of TEDxNortheasternU London. You will help coordinate across teams, act as a key point of contact between officers and executive leadership, and step in where needed to keep operations running smoothly.",
       "responsibilities": [
-        "Support the Senior Vice President in overseeing officer teams",
+        "Support the President in overseeing officer teams",
         "Act as a liaison between the Executive Committee and Officers",
         "Assist in planning and running team meetings and check-ins",
         "Step in to cover responsibilities across teams when needed",
@@ -30,7 +30,7 @@
       "slug": "secretary",
       "title": "Secretary",
       "category": "Executive Committee",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
       "description": "The Secretary keeps TEDxNortheasternU London organised and running efficiently. You will manage internal communications, maintain records, schedule meetings, and ensure the team stays aligned and informed across all stages of the event cycle.",
       "responsibilities": [
@@ -56,7 +56,7 @@
       "slug": "marketing-officer",
       "title": "Marketing Officer",
       "category": "Officer",
-      "timeCommitment": "4–6 hrs/week",
+      "timeCommitment": "4\u20136 hrs/week",
       "location": "London, UK",
       "description": "The Marketing Officer drives awareness and engagement for TEDxNortheasternU London. You will plan and execute marketing campaigns, grow our audience on and off campus, and ensure the right people hear about our events and initiatives.",
       "responsibilities": [
@@ -81,7 +81,7 @@
       "slug": "media-officer-photography",
       "title": "Media Officer",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
       "description": "The Media Officer (Photography) is responsible for capturing the visual story of TEDxNortheasternU London. From workshop sessions to the flagship event, you will document our journey through photography, producing a library of high-quality images that represent the spirit of our community.",
       "responsibilities": [
@@ -104,9 +104,9 @@
     },
     {
       "slug": "media-officer-videography",
-      "title": "Media Officer · Videography",
+      "title": "Media Officer \u00b7 Videography",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
       "description": "The Media Officer (Videography) captures and produces video content for TEDxNortheasternU London. You will film and edit highlight reels, behind-the-scenes content, and event documentation to share our story with the wider world.",
       "responsibilities": [
@@ -129,17 +129,17 @@
     },
     {
       "slug": "events-officer",
-      "title": "Operations & Events Officer",
+      "title": "Events Officer",
       "category": "Officer",
-      "timeCommitment": "4–6 hrs/week",
+      "timeCommitment": "4\u20136 hrs/week",
       "location": "London, UK",
-      "description": "The Operations & Events Officer is responsible for planning and executing the logistics of TEDxNortheasternU London events. From venue coordination to day-of operations, you will ensure every event runs smoothly and leaves a lasting impression on our audience.",
+      "description": "The Events Officer is responsible for planning and executing the logistics of TEDxNortheasternU London events. From venue coordination to day-of operations, you will ensure every event runs smoothly and leaves a lasting impression on our audience.",
       "responsibilities": [
         "Coordinate venue bookings, layouts, and event logistics",
         "Manage supplier and vendor relationships",
         "Prepare run-of-show documents and event briefs",
         "Oversee on-the-day setup, operations, and breakdown",
-        "Liaise with the Operations Officer on staffing and scheduling",
+        "Coordinate with officer teams on staffing and scheduling needs",
         "Support post-event evaluation and debrief"
       ],
       "requirements": [
@@ -157,7 +157,7 @@
       "slug": "operations-officer",
       "title": "Operations Officer",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
       "description": "The Operations Officer ensures TEDxNortheasternU London runs like clockwork behind the scenes. You will manage internal workflows, coordinate team logistics, and support the smooth delivery of both the flagship event and day-to-day organisational operations.",
       "responsibilities": [
@@ -182,9 +182,9 @@
       "slug": "outreach-officer",
       "title": "Outreach Officer",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
-      "description": "The Outreach Officer builds and maintains relationships that extend TEDxNortheasternU London’s reach beyond campus. You will connect with external organisations, student groups, and communities to grow our network, attract diverse audiences, and create partnership opportunities.",
+      "description": "The Outreach Officer builds and maintains relationships that extend TEDxNortheasternU London\u2019s reach beyond campus. You will connect with external organisations, student groups, and communities to grow our network, attract diverse audiences, and create partnership opportunities.",
       "responsibilities": [
         "Identify and approach external organisations and communities for partnership",
         "Maintain relationships with student societies, clubs, and external groups",
@@ -207,11 +207,11 @@
       "slug": "social-media-officer",
       "title": "Social Media Officer",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
       "description": "The Social Media Officer manages the online presence of TEDxNortheasternU London. You will create and schedule content across our social platforms, grow our following, and build an engaged community that reflects the energy and values of our events.",
       "responsibilities": [
-        "Manage and grow TEDxNortheasternU London’s social media accounts",
+        "Manage and grow TEDxNortheasternU London\u2019s social media accounts",
         "Plan and execute a content calendar across Instagram, LinkedIn, and other platforms",
         "Create engaging written and visual content in collaboration with the Media team",
         "Monitor analytics and adapt strategy based on performance",
@@ -233,14 +233,14 @@
       "slug": "sponsorship-officer",
       "title": "Sponsorship Officer",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
       "description": "The Sponsorship Officer is responsible for identifying, approaching, and managing relationships with sponsors and partners for TEDxNortheasternU London. You will play a key role in securing the funding and in-kind support that makes our events possible, building lasting partnerships with organisations that share our mission.",
       "responsibilities": [
         "Identify and research potential sponsors and partners aligned with our mission",
         "Draft and send sponsorship proposals and outreach communications",
         "Manage ongoing sponsor relationships and ensure expectations are met",
-        "Coordinate sponsor deliverables — branding, benefits, event presence",
+        "Coordinate sponsor deliverables \u2014 branding, benefits, event presence",
         "Maintain a pipeline of sponsorship leads and track progress",
         "Support the Treasurer in financial reporting related to sponsorship income"
       ],
@@ -253,15 +253,15 @@
       ],
       "applyUrl": "",
       "order": 10,
-      "status": "open"
+      "status": "closed"
     },
     {
       "slug": "tech-officer",
       "title": "Technology Officer",
       "category": "Officer",
-      "timeCommitment": "3–5 hrs/week",
+      "timeCommitment": "3\u20135 hrs/week",
       "location": "London, UK",
-      "description": "The Technology Officer manages the technology that powers TEDxNortheasternU London — from our website to AV setup at events. You will ensure our digital presence is polished, our event tech runs without a hitch, and the team has the tools it needs to operate effectively.",
+      "description": "The Technology Officer manages the technology that powers TEDxNortheasternU London \u2014 from our website to AV setup at events. You will ensure our digital presence is polished, our event tech runs without a hitch, and the team has the tools it needs to operate effectively.",
       "responsibilities": [
         "Maintain and update the TEDxNortheasternU London website",
         "Manage audio-visual setup and technical operations at events",
