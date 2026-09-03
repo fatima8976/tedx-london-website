@@ -560,7 +560,7 @@ section { padding: 7rem 3rem; }
 }
 .member-grid .member-card {
   flex: 0 0 calc(33.333% - 1.5rem);
-  max-width: 240px;
+  max-width: 320px;
 }
 .member-card {
   text-align: center;
