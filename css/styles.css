@@ -542,13 +542,13 @@ section { padding: 7rem 3rem; }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
-  max-width: 1000px;
+  gap: 2rem;
+  max-width: 1100px;
   margin: 3rem auto 0;
 }
 .member-grid-exco .member-card {
-  flex: 0 0 calc(33.33% - 2rem);
-  max-width: 280px;
+  flex: 0 0 calc(33.333% - 1.5rem);
+  max-width: 300px;
 }
 .member-grid {
   display: flex;
@@ -560,7 +560,7 @@ section { padding: 7rem 3rem; }
 }
 .member-grid .member-card {
   flex: 0 0 calc(33.333% - 1.5rem);
-  max-width: 320px;
+  max-width: 300px;
 }
 .member-card {
   text-align: center;
