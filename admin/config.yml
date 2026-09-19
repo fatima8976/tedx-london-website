@@ -294,3 +294,19 @@ collections:
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Body", name: "body", widget: "text"}
           - {label: "CTA Button Text", name: "ctaButtonText", widget: "string"}
+
+  - name: "speaker_call"
+    label: "Speaker Call (Join Page)"
+    files:
+      - name: "speaker_call"
+        label: "Speaker Call (Join Page)"
+        file: "content/speaker-call.json"
+        fields:
+          - {label: "Show this section?", name: "active", widget: "boolean", default: true, hint: "Turn off to hide the whole speaker call-out without deleting it"}
+          - {label: "Eyebrow", name: "eyebrow", widget: "string", hint: "e.g. Now Accepting Applications"}
+          - {label: "Title", name: "title", widget: "string", hint: "e.g. Speak at Catalyst"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Event Timing", name: "eventTiming", widget: "string", hint: "e.g. November 2026"}
+          - {label: "Applications Close", name: "deadline", widget: "datetime", format: "YYYY-MM-DD", hint: "Section auto-hides after this date"}
+          - {label: "Application Form URL", name: "formUrl", widget: "string"}
+          - {label: "Button Text", name: "buttonText", widget: "string", default: "Apply to Speak"}
