@@ -25,7 +25,7 @@
   --bg-secondary: #141414;
   --bg-card: #1E1E1E;
   --text-primary: #F5F5F0;
-  --text-secondary: #BBB;
+  --text-secondary: #eaeaea;
   --text-muted: #888;
   --border: rgba(255,255,255,0.06);
   --nav-bg: rgba(10,10,10,0.85);
@@ -217,6 +217,98 @@ nav.scrolled { padding: 0.8rem 3rem; }
 .btn-outline { background: transparent; color: var(--text-primary); border: 1.5px solid var(--border); }
 .btn-outline:hover { border-color: var(--text-primary); transform: translateY(-2px); }
 .btn-sm { padding: 0.5rem 1.2rem; font-size: 0.8rem; }
+
+/* ── FORM INPUTS ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+textarea,
+.form-input {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea,
+textarea.form-input {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder,
+.form-input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+/* Hover State */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+.form-input:hover {
+  border-color: rgba(235, 0, 40, 0.3);
+}
+
+/* Focus State */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+.form-input:focus {
+  background: var(--bg-primary);
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(235, 0, 40, 0.12);
+}
+
+/* Disabled State */
+input:disabled,
+textarea:disabled,
+.form-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .hero-scroll {
   position: absolute; bottom: 2.5rem; left: 3rem;
