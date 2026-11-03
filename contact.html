@@ -132,7 +132,7 @@
           </p>
         </div>
 
-        <button href="" class="btn btn-primary" id="sendButton">Send &rarr;</button>
+        <button class="btn btn-primary" id="sendButton">Send &rarr;</button>
 
       </form>
       <style>
@@ -192,14 +192,16 @@
         };
       </script>
       <script>
-        const sendBtn = document.getElementById("contact-form")
-        const actualSendBtn = document.getElementById("sendButton")
+        const contactForm = document.getElementById("contact-form")
+        const sendBtn = document.getElementById("sendButton")
         
-        sendBtn.addEventListener("submit", async (ev) => {
+        contactForm.addEventListener("submit", async (ev) => {
           ev.preventDefault()
-          if(actualSendBtn.disabled) return;
-          actualSendBtn.disabled = true
-          const formData = new FormData(sendBtn)
+
+          if(sendBtn.disabled) return;
+          sendBtn.disabled = true
+
+          const formData = new FormData(contactForm)
 
           //name email subject body
           console.log(formData)
