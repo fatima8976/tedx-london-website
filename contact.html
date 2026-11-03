@@ -193,9 +193,10 @@
       </script>
       <script>
         const sendBtn = document.getElementById("contact-form")
+        
         sendBtn.addEventListener("submit", async (ev) => {
           ev.preventDefault()
-
+          sendBtn.disabled = true
           const formData = new FormData(sendBtn)
 
           //name email subject body
