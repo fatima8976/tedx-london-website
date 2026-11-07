@@ -8,60 +8,60 @@
       "order": 1
     },
     {
-      "name": "",
-      "photo": "",
+      "name": "Hifza Nilkund",
+      "photo": "/members/photos/Hifza.jpeg",
       "role": "Vice President",
       "group": "ExCo",
-      "order": 2
-    },
-    {
-      "name": "",
-      "photo": "",
-      "role": "Secretary",
-      "group": "ExCo",
-      "order": 3
-    },
-    {
-      "name": "",
-      "photo": "",
-      "role": "Treasurer",
-      "group": "ExCo",
-      "order": 4
-    },
-    {
-      "name": "",
-      "photo": "",
-      "role": "Marketing Officer",
-      "group": "Officers",
       "order": 1
     },
     {
-      "name": "",
-      "photo": "",
-      "role": "Media Officer",
-      "group": "Officers",
+      "name": "Emilia Valdez",
+      "photo": "/members/photos/Emilia.jpg",
+      "role": "Secretary",
+      "group": "ExCo",
       "order": 2
     },
     {
-      "name": "",
-      "photo": "",
-      "role": "Events Officer",
-      "group": "Officers",
+      "name": "Shiven Dhir",
+      "photo": "/members/photos/Goat.jpg",
+      "role": "Technology Officer",
+      "group": "ExCo",
       "order": 3
     },
     {
-      "name": "",
-      "photo": "",
-      "role": "Outreach Officer",
-      "group": "Officers",
+      "name" : "Joe Book",
+      "photo": "/members/photos/Joe.jpeg",
+      "role": "Live Streaming Officer",
+      "group": "ExCo",
       "order": 4
     },
     {
-      "name": "",
+      "name": "Alexa Flores Rose",
       "photo": "",
-      "role": "Technology Officer",
-      "group": "Officers",
+      "role": "Marketing Officer",
+      "group": "ExCo",
       "order": 5
-    }
+    },
+    {
+      "name": "Sorina Maskara",
+      "photo": "/members/photos/Sorina.jpeg",
+      "role": "Marketing Officer",
+      "group": "ExCo",
+      "order": 6
+    },
+    {
+      "name": "Ibrahim Abdul Aziz",
+      "photo": "/members/photos/Ibrahim.jpeg",
+      "role": "Outreach Officer",
+      "group": "ExCo",
+      "order": 7
+    },
+    {
+      "name": "Raunak Kasera",
+      "photo": "",
+      "role": "Events Officer",
+      "group": "ExCo",
+      "order": 8
+    } 
   ]
 }
