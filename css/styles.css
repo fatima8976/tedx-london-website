@@ -42,6 +42,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   transition: background 0.3s ease, color 0.3s ease;
+  padding-bottom: 5vh;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -792,7 +793,7 @@ footer { background: var(--bg-secondary); border-top: 1px solid var(--border); p
   .flag-hero { padding: 2.5rem 1.5rem 4rem; }
   .flag-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .flag-hero-img { display: none; }
-  .page-hero { padding: 8rem 1.5rem 4rem; }
+  .page-hero { padding: 6rem 1.5rem 4rem; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .hero-scroll { display: none; }

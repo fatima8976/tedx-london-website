@@ -1,0 +1,256 @@
+<!--All updates to the navbar can be added here-->
+<div class="nav-dropdown">
+  <a href="events.html" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">Events <span
+      class="dropdown-caret">&#9660;</span></a>
+
+
+
+
+  <div class="nav-dropdown-menu">
+
+    <a href="events.html" class="nav-dropdown-item">
+      <div class="dropdown-item-title">Flagship Event</div>
+      <div class="dropdown-item-desc">Ideas. Change. Everything. &mdash; our flagship 2026 event.</div>
+    </a>
+
+    <div class="nav-dropdown">
+      <a href="overview/" class="nav-dropdown-toggle" onclick="toggleSubDropdown(event)">Previous Events <span
+          class="dropdown-caret">&#9660;</span></a>
+
+      <span class="nav-dropdown-menu exclude">
+        <a href="events2025.html" class="nav-dropdown-item exclude">
+          <div class="dropdown-item-title">Flagship Event</div>
+          <div class="dropdown-item-desc">Ideas. Change. Everything. &mdash; our inaugural 2025 event.</div>
+        </a>
+        <a href="workshop-series/" class="nav-dropdown-item exclude">
+          <div class="dropdown-item-title">2025 Workshop Series</div>
+          <div class="dropdown-item-desc">Behind-the-scenes sessions helping speakers find their voice.</div>
+        </a>
+      </span>
+
+    </div>
+  </div>
+</div>
+
+<!-- Countdown bar with split-flap digits: paste anywhere inside <body>. Uses your site's existing color variables. -->
+  <div id="cd-bar" role="timer" aria-label="Countdown to 12 Nov 2026, 6:00 PM GMT">
+    <span class="cd-label"><span class="cd-dot" aria-hidden="true"></span><span class="cd-text">12 Nov 2026, 6:00 PM GMT</span></span>
+    <span class="cd-clock" aria-hidden="true">
+      <span class="cd-group" data-cd="d"></span><span class="cd-u">d</span>
+      <span class="cd-group" data-cd="h"></span><span class="cd-u">h</span>
+      <span class="cd-group" data-cd="m"></span><span class="cd-u">m</span>
+      <span class="cd-group cd-sec" data-cd="s"></span><span class="cd-u">s</span>
+    </span>
+  
+    <style>
+      #cd-bar {
+        --cd-h: max(5vh, 2rem);
+        --cd-card: calc(var(--cd-h) * 0.72);
+        --cd-r: 4px;
+        --cd-dur: 0.24s;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-sizing: content-box;
+        height: 5vh;
+        min-height: 2rem;
+        padding: 0 clamp(0.75rem, 3vw, 2rem) env(safe-area-inset-bottom, 0px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        background: var(--nav-bg);
+        -webkit-backdrop-filter: blur(14px) saturate(1.4);
+        backdrop-filter: blur(14px) saturate(1.4);
+        border-top: 1px solid var(--border);
+        box-shadow: 0 -8px 24px -12px rgba(0, 0, 0, 0.25);
+        color: var(--text-primary);
+        font-family: inherit;
+        line-height: 1;
+        animation: cd-rise 0.7s cubic-bezier(0.2, 0.9, 0.2, 1) both;
+      }
+      @keyframes cd-rise {
+        from { transform: translateY(110%); }
+        to   { transform: translateY(0); }
+      }
+  
+      /* Label + live dot */
+      #cd-bar .cd-label {
+        display: flex;
+        align-items: center;
+        gap: 0.6em;
+        min-width: 0;
+        font-size: clamp(0.7rem, 1.6vh, 0.9rem);
+        color: var(--text-muted);
+      }
+      #cd-bar .cd-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #cd-bar .cd-dot {
+        flex-shrink: 0;
+        width: 0.55em;
+        height: 0.55em;
+        border-radius: 50%;
+        background: #8B0000;
+        box-shadow: 0 0 0 0 var(--speaker-photo-bg);
+        animation: cd-pulse 1s ease-out infinite;
+      }
+      @keyframes cd-pulse {
+        0%   { box-shadow: 0 0 0 0 rgba(139, 0, 0, 0.45); }
+        100% { box-shadow: 0 0 0 0.6em rgba(139, 0, 0, 0); }
+      }
+  
+      /* Clock layout */
+      #cd-bar .cd-clock {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      #cd-bar .cd-group {
+        display: inline-flex;
+        gap: 2px;
+      }
+      #cd-bar .cd-u {
+        align-self: flex-end;
+        margin: 0 0.9em 0.35em 0.3em;
+        font-size: clamp(0.6rem, 1.3vh, 0.75rem);
+        color: var(--text-muted);
+      }
+      #cd-bar .cd-u:last-child { margin-right: 0; }
+  
+      /* Split-flap card */
+      #cd-bar .cd-card {
+        position: relative;
+        display: inline-block;
+        width: calc(var(--cd-card) * 0.68);
+        height: var(--cd-card);
+        font-size: calc(var(--cd-card) * 0.78);
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        perspective: calc(var(--cd-card) * 5);
+        border-radius: var(--cd-r);
+        box-shadow:
+          0 1px 0 var(--border),
+          0 2px 4px -1px rgba(0, 0, 0, 0.25);
+      }
+      #cd-bar .cd-half {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 50%;
+        overflow: hidden;
+        background: var(--bg-card);
+        color: var(--text-primary);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+      #cd-bar .cd-half > span {
+        display: block;
+        height: var(--cd-card);
+        line-height: var(--cd-card);
+        text-align: center;
+      }
+      #cd-bar .cd-top {
+        top: 0;
+        border-radius: var(--cd-r) var(--cd-r) 0 0;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.03));
+      }
+      #cd-bar .cd-bot {
+        bottom: 0;
+        border-radius: 0 0 var(--cd-r) var(--cd-r);
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+      }
+      #cd-bar .cd-bot > span { transform: translateY(-50%); }
+  
+      /* Seconds get a faint crimson tint from your palette */
+      #cd-bar .cd-sec .cd-half {
+        background-color: var(--bg-card);
+        background-image: linear-gradient(var(--speaker-photo-bg), var(--speaker-photo-bg));
+      }
+  
+      /* Hinge line across the middle */
+      #cd-bar .cd-card::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(50% - 0.5px);
+        height: 1px;
+        background: var(--bg-primary);
+        opacity: 0.7;
+        z-index: 4;
+      }
+  
+      /* Moving flaps */
+      #cd-bar .cd-flap-top {
+        z-index: 3;
+        transform-origin: 50% 100%;
+        transform: rotateX(0deg);
+      }
+      #cd-bar .cd-flap-bot {
+        z-index: 3;
+        transform-origin: 50% 0%;
+        transform: rotateX(90deg);
+      }
+      /* Shading that darkens a flap as it turns away from the light */
+      #cd-bar .cd-flap-top::after,
+      #cd-bar .cd-flap-bot::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #000;
+        opacity: 0;
+        pointer-events: none;
+      }
+      #cd-bar .is-flip .cd-flap-top {
+        animation: cd-fold-top var(--cd-dur) cubic-bezier(0.55, 0, 0.9, 0.5) forwards;
+      }
+      #cd-bar .is-flip .cd-flap-top::after {
+        animation: cd-shade-in var(--cd-dur) ease-in forwards;
+      }
+      #cd-bar .is-flip .cd-flap-bot {
+        animation: cd-fold-bot calc(var(--cd-dur) * 1.4) cubic-bezier(0.2, 0.8, 0.3, 1.25) var(--cd-dur) forwards;
+      }
+      #cd-bar .is-flip .cd-flap-bot::after {
+        animation: cd-shade-out calc(var(--cd-dur) * 1.4) ease-out var(--cd-dur) both;
+      }
+      @keyframes cd-fold-top { to { transform: rotateX(-90deg); } }
+      @keyframes cd-fold-bot {
+        from { transform: rotateX(90deg); }
+        to   { transform: rotateX(0deg); }
+      }
+      @keyframes cd-shade-in  { to   { opacity: 0.35; } }
+      @keyframes cd-shade-out { from { opacity: 0.35; } to { opacity: 0; } }
+  
+      /* Finished state */
+      #cd-bar.is-done .cd-dot { animation: none; background: var(--text-muted); }
+      #cd-bar.is-done .cd-text { color: var(--text-primary); font-weight: 600; }
+      #cd-bar.is-done .cd-clock { animation: cd-glow 1.6s ease-in-out 3; }
+      @keyframes cd-glow {
+        50% { filter: drop-shadow(0 0 6px rgba(139, 0, 0, 0.6)); }
+      }
+  
+      @media (max-width: 380px) {
+        #cd-bar .cd-text { display: none; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #cd-bar,
+        #cd-bar .cd-dot,
+        #cd-bar .is-flip .cd-flap-top,
+        #cd-bar .is-flip .cd-flap-bot,
+        #cd-bar .is-flip .cd-flap-top::after,
+        #cd-bar .is-flip .cd-flap-bot::after,
+        #cd-bar.is-done .cd-clock { animation: none; }
+        #cd-bar .cd-flap-top,
+        #cd-bar .cd-flap-bot { display: none; }
+      }
+    </style>
+  
+    <script>
+      
+    </script>
+  </div>  

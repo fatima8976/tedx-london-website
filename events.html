@@ -26,6 +26,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+
   <nav id="navbar">
     <div class="nav-logo">
       <a href="index.html">
@@ -55,24 +56,17 @@
       <a href="join.html">Join</a>
 
       <div class="nav-dropdown">
-        <a href="events.html" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">Events <span
-            class="dropdown-caret">&#9660;</span></a>
-
-        <a href="events.html" class="nav-dropdown-item">
-          <div class="dropdown-item-title">Flagship Event</div>
-          <div class="dropdown-item-desc">Ideas. Change. Everything. &mdash; our inaugural 2025 event.</div>
-        </a>
-        <a href="workshop-series/" class="nav-dropdown-item">
-          <div class="dropdown-item-title">Workshop Series</div>
-          <div class="dropdown-item-desc">Behind-the-scenes sessions helping speakers find their voice.</div>
-        </a>
+        <a href="events.html" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">Events <span class="dropdown-caret">&#9660;</span></a>
+        <div class="nav-dropdown-menu">
+          <a href="events.html" class="nav-dropdown-item"><div class="dropdown-item-title">Flagship Event</div><div class="dropdown-item-desc">Ideas. Change. Everything. &mdash; our flagship 2026 event.</div></a>
+          <a href="workshop-series/" class="nav-dropdown-item"><div class="dropdown-item-title">Workshop Series</div><div class="dropdown-item-desc">Behind-the-scenes sessions helping speakers find their voice.</div></a>
+        </div>
       </div>
-    </div>
 
-    <a href="sponsors.html">Sponsor</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact</a>
-    <a class="nav-cta" href="events.html">Explore our flagship &rarr;</a>
+      <a href="sponsors.html">Sponsor</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="events.html">Explore our flagship &rarr;</a>
     </div>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" onclick="toggleTheme()">
       <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -101,9 +95,9 @@
   <section class="flag-hero" style="padding-top: 7rem;">
     <div class="flag-hero-inner">
       <div class="flag-hero-content">
-        <div class="flag-badge">Inaugural Event &middot; 2025</div>
+        <div class="flag-badge">Flagship Event &middot; 2026</div>
         <h1 id="flagTitle">&nbsp;</h1>
-        <p class="flag-hero-subtitle">TEDxNortheasternU London &middot; Inaugural Event</p>
+        <p class="flag-hero-subtitle">TEDxNortheasternU London &middot; Flagship Event</p>
         <div class="flag-pills">
           <span class="flag-pill"><span class="pill-emoji">&#128197;</span> <span id="flagPillDate"></span></span>
           <span class="flag-pill"><span class="pill-emoji">&#128336;</span> <span id="flagPillTime"></span></span>
@@ -167,7 +161,7 @@
       <div class="section-title">From the evening</div>
       <p
         style="font-size:1.05rem; font-weight:300; color:var(--text-secondary); line-height:1.7; max-width:600px; margin-top:1rem;">
-        A glimpse into TEDxNortheasternU London&rsquo;s inaugural event at Devon House, March 2025.</p>
+        A glimpse into TEDxNortheasternU London&rsquo;s inaugural event at Devon House, March 2026.</p>
     </div>
     <div class="photo-carousel">
       <img id="carouselBg" class="carousel-bg" src="gallery/fatima-lorena.JPG" alt="" aria-hidden="true">
@@ -223,7 +217,7 @@
   </footer>
   <script src="js/main.js"></script>
   <script src="js/settings.js"></script>
-  <script src="js/events.js"></script>
+  <script src="js/events2026.js"></script>
 </body>
 
 </html>
