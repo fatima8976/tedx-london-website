@@ -1,0 +1,103 @@
+{
+    "speakers": [
+      {
+        "name": "Aidan Dostan",
+        "photo": "/speakers/Aidan-Doston.jpg",
+        "roleAffiliation": "Undecided · Northeastern University",
+        "speakerType": "Student",
+        "talkTitle": "",
+        "bio": "Aidan is a university student at Northeastern University London, originally from Portland, Oregon. While she is currently undecided on her major, she is interested in pursuing international affairs and criminal justice. Through her personal and professional experiences, as well as independent international travel, she has developed a curiosity about the world and a desire to broaden her understanding of it. She is particularly interested in exploring how political systems intersect with issues of equality and justice, and how these relationships shape societies and cultures around the world.",
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 1
+      },
+      {
+        "name": "Ellie Wisnia",
+        "photo": "/speakers/Emilia-Wisnia.jpg",
+        "roleAffiliation": "Law · Northeastern University London",
+        "speakerType": "Student",
+        "talkTitle": "",
+        "bio": "Ellie Wisnia is a final-year law student at Northeastern University London. She interned in the Capital Markets team at a Band 1 law firm and was the sole intern at LegalTechTalk, Europe's largest legal transformation event. She secured both roles via a cold message.\n\nAt NU London, she is a Careers Ambassador and founded The Unbillable Hour, a podcast about law and legal careers. Her article on cold outreach will appear in the NU London team's semesterly Legal Newsletter.",
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 2
+      },
+      {
+        "name": "Louise-Anne De Belen",
+        "photo": "/speakers/Lou.jpeg",
+        "roleAffiliation": "Philosophy & Computer Science · Northeastern University",
+        "speakerType": "Student",
+        "talkTitle": "",
+        "bio": "Louise-Anne De Belen is a Philosophy and Computer Science BSc student, interested in the interaction between technology and its philosophical aspects. Her experience in social impact research for educational charities has also strengthened her passion for accessibility in academia.",
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 3
+      },
+      {
+        "name": "Oresta Holubec",
+        "photo": "/speakers/Oresta.jpeg",
+        "roleAffiliation": "International Affairs · Northeastern University",
+        "speakerType": "Student",
+        "talkTitle": "",
+        "bio": "Oresta Holubec is a student at Northeastern University's London Scholars program, where she is studying international affairs. She is interested in topics of diplomacy and real-world problem-solving and enjoys learning about and immersing herself in different cultures. Oresta brings together her personal experiences and studies in order to form educated opinions, tackle challenges, ask good questions, fight disinformation, and educate people about Ukraine.",
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 4
+      },
+      {
+        "name": "Sylvia Biermann",
+        "photo": "/speakers/Sylvia.jpeg",
+        "roleAffiliation": "International Affairs & Political Science · Northeastern University",
+        "speakerType": "Student",
+        "talkTitle": "",
+        "bio": "My name is Sylvia Biermann, and I'm currently a freshman at Northeastern University London, majoring in Chemical Engineering. I grew up in Michigan, US, where I developed an interest in environmental science and activism. At college, I'm excited to explore courses in engineering, be a part of Engineers Without Borders, and meet people who are also interested in the environment.",
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 5
+      },
+      {
+        "name": "Seren Mills",
+        "photo": "/speakers/ren.jpg",
+        "roleAffiliation": "Student Union President · Northeastern University London",
+        "speakerType": "Student",
+        "bio": "I'm a Computer Science and Philosophy graduate moving into product management, with a technical foundation in AI/ML and hands-on experience in a full-time leadership role at university-department level. \n \nAs Sabbatical Student Union President — a full-time, elected officer position within Northeastern University London's governance structure, not an extracurricular role — I own strategy and a combined £210k budget, deliver 40+ events a year, and led a Responsible AI campaign that resulted in formal policy reviews at the university. I also founded a cross-institutional network now spanning 14 US universities in London, reaching 10,000+ students from a standing start.",
+        "talkTitle": null, 
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 6
+      },
+      {
+        "name": "Emilia Valdez ",
+        "photo": "/speakers/valdez.jpg",
+        "roleAffiliation": "Student · Northeastern University London",
+        "speakerType": "Student",
+        "bio": "",
+        "talkTitle": null, 
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 6
+      },
+      {
+        "name": "Dr. Bianca Serwinski",
+        "photo": "/speakers/bianca.jpeg",
+        "roleAffiliation": "Head of Psychology and Associate Professor · Northeastern University London",
+        "speakerType": "Industry",
+        "talkTitle": "",
+        "bio": "A Chartered Psychologist with a PhD in Psychobiology from UCL, her work spans stress physiology, psychosocial wellbeing, interpersonal relationships, motivation and behaviour change. Combining academic research with applied psychology, she is particularly interested in the dynamic interplay between our psychological, biological, and social experiences, exploring how our relationships and interactions with others shape our wellbeing, health and everyday behaviours.",
+        "watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 7
+      },
+      {
+        "name": "Lucero Tagle",
+        "photo": "/speakers/Lucero.jpg",
+        "roleAffiliation": "",
+        "speakerType": "Industry",
+        "talkTitle": "",
+        "bio": "Lucero Tagle is an organisational psychologist who has spent her career studying what makes people listen, trust and act. She spent 16 years at Google, leading learning and development programmes across EMEA and globally, before co-founding PitchNinjas. Today, she leads a global team of communication coaches who support leaders at organisations including Netflix, Ericsson, Adobe and Estée Lauder through high-stakes presentations, pitches and conversations. Lucero also delivers pitch masterclasses for Google for Startups, advises founders at the University of Cambridge as an Entrepreneur in Residence and is an angel investor. Her own journey into public speaking has shown her that one honest voice, used at the right moment, can be the spark that moves others to","watchLink": "",
+        "eventSlug": "ideas-change-everything",
+        "order": 8
+      }
+    ]
+  }
+  

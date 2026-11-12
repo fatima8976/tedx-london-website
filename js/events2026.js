@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       var bio = document.createElement('p');
       bio.className = 'speaker-full-desc';
-      bio.textContent = speaker.bio || '';
+      bio.innerText = speaker.bio || '';
   
       info.appendChild(name);
       info.appendChild(role);
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     Promise.all([
       fetch('/content/events2026.json').then(function (r) { return r.json(); }),
-      fetch('/content/speakers.json').then(function (r) { return r.json(); })
+      fetch('/content/speakers2026.json').then(function (r) { return r.json(); })
     ]).then(function (results) {
       var events = results[0].events || [];
       var speakers = results[1].speakers || [];
